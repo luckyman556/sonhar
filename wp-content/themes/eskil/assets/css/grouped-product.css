@@ -17,14 +17,21 @@
 
   .description {
     width: 520px;
+    margin-top: 16px;
+    margin-bottom: 0px;
   }
 
   .sub-title {
     font-size: 24px;
+    margin: 31px 0 0 0;
+    letter-spacing: 0.5px;
   }
-
   hr.horisontal-line:not(.is-style-wide):not(.is-style-dots) {
     max-width: none;
+  }
+  hr.horisontal-line {
+    margin-top: 23px;
+    margin-bottom: 0;
   }
 
   .step-name {
