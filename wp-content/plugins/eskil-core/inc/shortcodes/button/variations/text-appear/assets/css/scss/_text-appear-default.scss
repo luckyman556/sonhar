@@ -1,0 +1,31 @@
+.qodef-button {
+
+	&.qodef-layout--text-appear {
+		@include qodefButtonOutlinedColor();
+		font-size: 16px;
+		line-height: 1.375em;
+		border-radius: 20px;
+		padding: 3px 11px 3px 7px;
+		overflow: hidden;
+		transition: all $transition-timing;
+		opacity: 0;
+
+		&.qodef--init {
+			opacity: 1;
+		}
+
+		.qodef-m-text {
+			overflow: hidden;
+			white-space: nowrap;
+			transition: width .3s ease-out;
+		}
+
+		.qodef-svg--button-arrow {
+			min-width: 18px;
+		}
+
+		&:hover {
+			@include qodefButtonOutlinedHoverColor();
+		}
+	}
+}

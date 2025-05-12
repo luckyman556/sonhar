@@ -1,0 +1,127 @@
+/* ==========================================================================
+   Portfolio List shortcode styles
+   ========================================================================== */
+
+.qodef-portfolio-list {
+
+	.qodef-e-inner {
+		position: relative;
+	}
+
+	.qodef-e-inner,
+	.qodef-e-media,
+	.qodef-e-content {
+		@include qodefRelativeLayout();
+	}
+
+	.qodef-e-media {
+
+		> * {
+			margin-bottom: 30px;
+		}
+
+		iframe {
+			display: block;
+			height: 100%;
+		}
+	}
+
+	.qodef-e-media-image {
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+
+		a, img {
+			display: block;
+			width: 100%;
+		}
+
+		&.qodef--background {
+			width: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+
+			img {
+				visibility: hidden;
+			}
+		}
+	}
+
+	.qodef-e-title {
+		margin: 0;
+	}
+
+	.qodef-e-excerpt {
+		margin: 15px 0 0;
+	}
+
+	.qodef-e-read-more {
+		margin: 15px 0 0;
+	}
+
+	.qodef-e-top-holder {
+		margin-bottom: 2px;
+	}
+
+	.qodef-e-post-link {
+		@include qodefAbsoluteLayout();
+	}
+
+	.qodef-m-pagination {
+		margin-top: 112px;
+	}
+
+	&.qodef-items--fixed {
+
+		.qodef-e-image {
+			//because of the custom padding around item
+			height: 100%;
+			overflow: hidden;
+		}
+
+		.qodef-e-media-image {
+			height: 100%;
+
+			a {
+				@include qodefRelativeLayout();
+				height: 100%;
+			}
+		}
+	}
+
+	.qodef-custom-margin {
+
+		.qodef-e-inner {
+			width: auto;
+		}
+	}
+
+	&.qodef-swiper-container {
+		@include qodefScreenSize680 {
+			.swiper-button-next,
+			.swiper-button-prev {
+				display: none;
+			}
+		}
+	}
+
+	.swiper-button-prev,
+	.swiper-button-next {
+		color: #fff;
+		border-radius: 20px;
+		transition: all $transition-timing;
+
+		.qodef-svg--slider-arrow-left,
+		.qodef-svg--slider-arrow-right {
+			stroke: #fff;
+		}
+
+		&:hover {
+			color: #000;
+			background-color: white;
+			border-radius: 4px;
+		}
+	}
+}

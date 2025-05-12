@@ -1,0 +1,119 @@
+/* ==========================================================================
+   Product List Info Below styles
+   ========================================================================== */
+
+.qodef-woo-product-list {
+
+	&.qodef-item-layout--info-below {
+
+		.qodef-woo-product-content {
+			display: flex;
+			flex-direction: column;
+			margin-top: 20px;
+
+			.qodef-woo-product-info {
+				//min-height: 45px;
+
+				.qodef-woo-product-title {
+					max-width: 82%;
+				}
+
+				.price {
+					padding-left: 35px;
+				}
+			}
+
+			.qodef-woo-add-to-cart {
+				margin-top: 10px;
+			}
+
+			.add_to_cart_button,
+			.added_to_cart {
+
+				&::before {
+					filter: brightness(0) saturate(100%);
+				}
+			}
+		}
+
+		.qodef-woo-product-image-inner {
+			display: flex;
+			flex-direction: row-reverse;
+			top: initial;
+			bottom: 0;
+			height: 36px;
+			padding: 0;
+
+			&::before {
+				content: " ";
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+
+			& > * {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-basis: 50%;
+				width: 100%;
+				height: 36px;
+				border: 1px solid #cccccc;
+				border-bottom: 0;
+				border-radius: 0;
+			}
+
+			& > :first-child {
+				border-left: 0;
+			}
+
+			.yith-wcwl-add-to-wishlist a,
+			.yith-wcqv-button {
+				color: #000 !important;
+			}
+
+			.yith-wcqv-button {
+				text-transform: uppercase;
+				font-size: 13px !important;
+				font-weight: 600;
+			}
+		}
+
+		&:not(.qodef-layout--masonry) {
+
+			.qodef-e-inner {
+
+				.qodef-woo-product-image {
+					border: 1px solid transparent;
+					transition: $transition-timing;
+				}
+
+				.qodef-woo-product-image-inner {
+
+					& > :first-child {
+						border-right: 0;
+					}
+
+					& > :last-child {
+						border-left: 0;
+					}
+				}
+
+				&:hover {
+
+					.qodef-woo-product-image {
+						border-color: #cccccc;
+					}
+				}
+			}
+
+			.qodef-grid-item,
+			li.product {
+				margin-bottom: 50px !important;
+			}
+		}
+	}
+}

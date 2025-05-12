@@ -1,0 +1,89 @@
+/* ==========================================================================
+   Portfolio List shortcode variation styles
+   ========================================================================== */
+
+.qodef-portfolio-list {
+
+	&.qodef-item-layout--image-on-hover {
+
+		article {
+			border-bottom: 1px solid $border-color;
+
+			&:first-of-type {
+				border-top: 1px solid $border-color;
+			}
+
+			&:nth-of-type(odd) {
+
+				.qodef-e-image {
+					right: 25%;
+					transform: translate(50%, 0);
+				}
+			}
+
+			&:nth-of-type(even) {
+
+				.qodef-e-image {
+					left: 25%;
+					transform: translate(-50%, 0);
+				}
+			}
+		}
+
+		.qodef-e-inner {
+			text-align: center;
+			color: rgb(234, 232, 232);
+			background-color: transparent;
+			transition: background-color $transition-timing;
+
+			&:hover {
+				background-color: currentColor;
+
+				.qodef-e-image {
+					clip-path: inset(0 0 0 0);
+				}
+			}
+		}
+
+		.qodef-e-image {
+			position: absolute;
+			top: -40px;
+			max-width: 295px;
+			z-index: 5;
+			transition: clip-path .5s cubic-bezier(.46, .03, .52, .96);
+			clip-path: inset(0 100% 0 0);
+		}
+
+		.qodef-e-content {
+			padding: 29px 0 24px;
+		}
+
+		.qodef-e-title {
+			text-transform: uppercase;
+		}
+
+		@include qodefScreenSize680 {
+
+			article {
+
+				&:nth-of-type(odd) {
+
+					.qodef-e-image {
+						right: 30%;
+					}
+				}
+
+				&:nth-of-type(even) {
+
+					.qodef-e-image {
+						left: 30%;
+					}
+				}
+			}
+
+			.qodef-e-media-image {
+				max-width: 70%;
+			}
+		}
+	}
+}

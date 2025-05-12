@@ -1,0 +1,98 @@
+/* ==========================================================================
+   Spinner layout styles
+   ========================================================================== */
+
+#qodef-page-spinner {
+
+	&.qodef-layout--eskil {
+
+		.qodef-m-eskil-images {
+			max-width: 33vw;
+			position: relative;
+			margin: 0 auto;
+
+			@include qodefScreenSize768 {
+				max-width: 66vw;
+			}
+		}
+
+		.qodef-m-eskil-images-first {
+			display: grid;
+			grid-template:
+					"g1 g20 g19 g18 g17 g16" 1fr
+					"g2 g21 g32 g31 g30 g15" 1fr
+					"g3 g22 g33 g36 g29 g14" 1fr
+					"g4 g23 g34 g35 g28 g13" 1fr
+					"g5 g24 g25 g26 g27 g12" 1fr
+					"g6 g7  g8  g9  g10 g11" 1fr /
+                    1fr 1fr 1fr 1fr 1fr 1fr;
+
+			.qodef-m-eskil-image {
+				opacity: 0;
+				@for $i from 1 through 36 {
+					&:nth-child(#{$i}) {
+						grid-area: g#{$i};
+					}
+				}
+			}
+		}
+
+		.qodef-m-eskil-images-second {
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: grid;
+			grid-template:
+					"g36 g17 g18 g19 g20 g21" 1fr
+					"g35 g16 g5  g6  g7  g22" 1fr
+					"g34 g15 g4  g1  g8  g23" 1fr
+					"g33 g14 g3  g2  g9  g24" 1fr
+					"g32 g13 g12 g11 g10 g25" 1fr
+					"g31 g30 g29 g28 g27 g26" 1fr /
+                    1fr 1fr 1fr 1fr 1fr 1fr;
+
+			.qodef-m-eskil-image {
+				opacity: 0;
+				@for $i from 1 through 36 {
+					&:nth-child(#{$i}) {
+						grid-area: g#{$i};
+					}
+				}
+			}
+		}
+
+		.qodef-m-eskil-title {
+			margin: 32px 0 0 0;
+			transition: .6s ease-out;
+			font-family: $special-font;
+			font-size: 32px;
+			line-height: 1.25em;
+			letter-spacing: -0.04em;
+
+			sup {
+				left: -0.5em;
+			}
+		}
+
+		.qodef-m-eskil-subtitle {
+			margin: 4px 0 0 0;
+			transition: .6s ease-out .05s;
+			font-size: 14px;
+			line-height: 1.14em;
+			letter-spacing: 0.02em;
+		}
+
+		.qodef-m-eskil-title,
+		.qodef-m-eskil-subtitle {
+			text-align: center;
+			text-transform: uppercase;
+			opacity: 0;
+			transform: translateY(50px);
+
+			&.qodef--appeared {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+	}
+}

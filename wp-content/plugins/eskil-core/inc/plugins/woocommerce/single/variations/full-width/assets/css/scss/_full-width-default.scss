@@ -1,0 +1,168 @@
+.qodef-product-layout--full-width {
+
+	#qodef-top-area,
+	#qodef-page-header {
+		background-color: transparent !important;
+	}
+
+	.qodef-page-title {
+		background-color: transparent;
+		z-index: 5;
+		
+		@include qodefScreenSize1024 {
+			position: absolute;
+		}
+	}
+
+	#qodef-page-inner {
+		padding-top: 0;
+	}
+
+	div#qodef-woo-page.qodef--single {
+		@media only screen and ( min-width: 1441px ) {
+			@each $key, $values in $content-grid-width-map {
+				@media only screen and (min-width: map-deep-get($content-grid-width-map, $key, 'responsive-break')) {
+					@at-root .qodef-product-layout--full-width.qodef-content-grid-#{$key} {
+						.woocommerce-tabs,
+						.related,
+						.qodef-social-share,
+						.woocommerce-notices-wrapper {
+							width: map-deep-get($content-grid-width-map, $key, 'content-grid-width') !important;
+						}
+					}
+				}
+			}
+		}
+
+		.woocommerce-tabs,
+		.qodef-social-share,
+		.related,
+		.woocommerce-notices-wrapper {
+			margin-left: auto;
+			margin-right: auto;
+
+			@include qodefScreenSize1440 {
+				width: 1100px;
+			}
+
+			@include qodefScreenSize1024 {
+				padding-left: 0;
+				padding-right: 0;
+				width: 86%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+		.woocommerce-notices-wrapper {
+			position: absolute;
+			top: 7%;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 50;
+
+			@include qodefScreenSize1600 {
+				top: 7%;
+			}
+
+			@include qodefScreenSize1440 {
+				top: 7.5%;
+			}
+			
+			@include qodefScreenSize1024 {
+				top: 1%;
+			}
+
+			@include qodefScreenSize680 {
+				position: relative;
+				left: 0;
+				transform: none;
+				top: 0;
+
+				.woocommerce-message {
+					margin: 20px 0 !important;
+					width: 100% !important;
+					padding: 20px;
+				}
+			}
+
+			+ .product .qodef-woo-single-inner {
+				padding-top: 13.2%;
+
+				@include qodefScreenSize1600 {
+					padding-top: 15%;
+				}
+
+				@include qodefScreenSize1440 {
+					padding-top: 20%;
+				}
+
+				@include qodefScreenSize768 {
+					padding-top: 23%;
+				}
+
+				@include qodefScreenSize680 {
+					padding-top: 0;
+				}
+			}
+		}
+
+		.woocommerce-tabs {
+			display: block;
+		}
+
+		@media only screen and ( min-width: 1441px ) {
+			@each $key, $values in $content-grid-width-map {
+				@at-root .qodef-product-layout--full-width.qodef-content-grid-#{$key} .qodef-woo-single-inner {
+					padding-left: calc( ( 100vw - #{map-deep-get($content-grid-width-map, $key, 'content-grid-width')} )/2 ) !important;
+					padding-right: calc( ( 100vw - #{map-deep-get($content-grid-width-map, $key, 'content-grid-width')} )/2 ) !important;
+				}
+			}
+		}
+
+		.qodef-woo-single-inner {
+			margin: 0;
+			width: 100vw;
+			padding-top: 11%;
+			padding-bottom: 3.4%;
+
+			@include qodefScreenSize1440 {
+				padding: 14.2% 4.5% 7%;
+			}
+
+			@include qodefScreenSize1024 {
+				padding: 11% 0 10%;
+			}
+		}
+
+		.qodef-woo-single-image {
+			padding: 0;
+
+			@include qodefScreenSize1024 {
+				margin-left: auto;
+				margin-right: auto;
+				width: 86%;
+			}
+		}
+
+		.entry-summary {
+			width: 67%;
+			padding: 25px 0 0 134px;
+
+			.qodef-woo-product-title {
+				padding-right: 0;
+			}
+
+			@include qodefScreenSize1440 {
+				margin-top: 10px;
+			}
+
+			@include qodefScreenSize1024 {
+				margin-left: auto;
+				margin-right: auto;
+				width: 86%;
+				padding: 0;
+			}
+		}
+	}
+}

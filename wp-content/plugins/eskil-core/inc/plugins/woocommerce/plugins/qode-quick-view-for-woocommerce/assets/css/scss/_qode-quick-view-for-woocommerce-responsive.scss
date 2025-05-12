@@ -1,0 +1,71 @@
+/* ==========================================================================
+   Qode WishList For WooCommerce - Wishlist responsive styles - begin
+   ========================================================================== */
+
+#qode-quick-view-for-woocommerce-pop-up.qqvfw {
+
+	.qqvfw-m-content {
+
+		.qqvfw-m-product {
+
+			> .product {
+
+				@include qodefScreenSize1024 {
+					flex-direction: row;
+				}
+
+				@include qodefScreenSize768 {
+
+					.qqvfw-m-media-wrapper,
+					.qqvfw-m-summary-wrapper {
+						flex-basis: 50%;
+					}
+
+					.qqvfw-m-media-wrapper {
+
+						.woocommerce-product-gallery,
+						.woocommerce-product-gallery.qodef-position--left {
+
+							.woocommerce-product-gallery__wrapper {
+
+								a {
+									height: 100%;
+								}
+
+								img {
+									object-fit: cover;
+									height: 100%;
+								}
+							}
+						}
+					}
+
+					form.cart {
+						flex-direction: column;
+					}
+
+					.qodef-quantity-buttons {
+						margin-bottom: 12px;
+					}
+				}
+
+				@include qodefScreenSize680 {
+					flex-wrap: wrap;
+
+					.qqvfw-m-media-wrapper,
+					.qqvfw-m-summary-wrapper {
+						flex-basis: 100%;
+					}
+
+					.qqvfw-m-media-wrapper {
+						max-height: 40vh;
+					}
+
+					.woocommerce-product-details__short-description {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

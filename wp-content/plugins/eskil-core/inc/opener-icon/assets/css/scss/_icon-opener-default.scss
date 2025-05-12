@@ -1,0 +1,147 @@
+/* ==========================================================================
+   Opener icon styles
+   ========================================================================== */
+
+.qodef-opener-icon {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1;
+
+	.qodef-m-icon {
+		position: relative;
+		visibility: visible;
+
+		&.qodef--close {
+			position: absolute;
+			top: 0;
+			left: 0;
+			visibility: hidden;
+		}
+	}
+
+	&.qodef-source--icon-pack {
+		font-size: 35px;
+
+		* {
+			display: inline-block;
+			line-height: inherit;
+
+			&:before {
+				display: inline-block;
+				line-height: inherit;
+			}
+		}
+
+		&.qodef--opened {
+
+			.qodef-m-icon {
+
+				&.qodef--open {
+					visibility: hidden;
+				}
+
+				&.qodef--close {
+					visibility: visible;
+				}
+			}
+		}
+	}
+
+	&.qodef-source--svg-path {
+
+		span {
+			position: relative;
+
+			> * {
+				vertical-align: middle;
+			}
+
+			> *,
+			path {
+				fill: currentColor;
+				stroke: currentColor;
+			}
+		}
+
+		&.qodef--opened {
+
+			.qodef-m-icon {
+
+				&.qodef--open {
+					visibility: hidden;
+				}
+
+				&.qodef--close {
+					visibility: visible;
+				}
+			}
+		}
+	}
+
+	&.qodef-source--predefined {
+
+		.qodef-search-close {
+			transform: rotate(0);
+			transform-origin: center;
+			transition: transform .3s ease-in-out;
+		}
+
+		.qodef-svg--menu {
+			display: block;
+
+			line {
+				stroke-dasharray: 45;
+				stroke-dashoffset: 90;
+				transition: stroke-dashoffset .45s ease-in-out;
+
+				&:nth-of-type(2) {
+					transition-delay: .15s;
+				}
+
+				&:nth-of-type(3) {
+					transition-delay: .3s;
+				}
+			}
+		}
+
+		.qodef-svg--close-menu {
+
+			line {
+				stroke-dasharray: 22;
+				stroke-dashoffset: 44;
+				transition: stroke-dashoffset .44s ease-in-out;
+
+				&:nth-of-type(2) {
+					transition-delay: .22s;
+				}
+			}
+		}
+
+		&:hover {
+
+			.qodef-svg--menu,
+			.qodef-svg--close-menu {
+
+				line {
+					stroke-dashoffset: 0;
+				}
+			}
+
+			.qodef-search-close {
+				transform: rotate(90deg);
+			}
+		}
+
+		&.qodef--opened {
+
+			.qodef--open {
+				visibility: hidden;
+			}
+
+			.qodef--close {
+				visibility: visible;
+			}
+		}
+	}
+}

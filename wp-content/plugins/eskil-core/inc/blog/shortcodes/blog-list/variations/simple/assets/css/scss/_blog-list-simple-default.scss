@@ -1,0 +1,70 @@
+/* ==========================================================================
+   Blog List Simple styles
+   ========================================================================== */
+
+.qodef-blog {
+	&.qodef-item-layout--simple {
+		border-top: 1px solid $border-color;
+
+		article {
+			border-bottom: 1px solid $border-color;
+
+			.qodef-e-inner {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				flex-direction: row-reverse;
+				padding: 30px 0;
+
+				@include qodefScreenSize680 {
+					align-items: flex-start;
+					flex-direction: column;
+				}
+			}
+
+			.qodef-e-media-image {
+				flex-shrink: 0;
+				width: 200px !important; // force image for video and audio post not to overflow
+				margin: 0;
+
+				@include qodefScreenSize680 {
+					width: 100% !important;
+					margin-bottom: 20px;
+				}
+
+				a {
+					@include qodefRelativeLayout();
+					overflow: hidden;
+
+					img {
+						transform: scale(1.1) translateX(0);
+						transition: transform .4s ease-in-out;
+					}
+
+					&:hover {
+
+						img {
+							transform: scale(1.1) translateX(2%);
+						}
+					}
+				}
+			}
+
+			.qodef-e-title {
+				padding-right: 50%;
+
+				@include qodefScreenSize1024 {
+					padding-right: 20%;
+				}
+
+				@include qodefScreenSize680 {
+					padding-right: 0;
+				}
+			}
+
+			.qodef-e-bottom-holder {
+				margin-top: 20px;
+			}
+		}
+	}
+}

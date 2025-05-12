@@ -1,0 +1,99 @@
+/* ==========================================================================
+   Frame Slider shortcode responsive style - begin
+   ========================================================================== */
+@include qodefScreenSize1600 {
+    .qodef-frame-slider-holder {
+        .qodef-frame-slider-image {
+            top: -7%;
+            width: 17%;
+        }
+
+        .qodef-m-item {
+            padding-top: calc(14.65% * 631 / 330);
+        }
+    }
+}
+
+@include qodefScreenSize1440 {
+    .qodef-frame-slider-holder {
+
+        .qodef-m-item {
+            padding-left: 14%;
+        }
+    }
+}
+
+@include qodefScreenSize1024 {
+    .qodef-frame-slider-holder {
+        $bottom-distance: 44px;
+
+        margin-bottom: $bottom-distance;
+
+        .swiper-pagination-bullets {
+            bottom: -$bottom-distance !important;
+        }
+
+        .qodef-frame-slider-image {
+            top: -6%;
+            width: 30%;
+        }
+
+        .qodef-m-item {
+            padding-left: 25.35%;
+            padding-top: calc(25.35% * 386 / 196);
+        }
+    }
+}
+
+@include qodefScreenSize768 {
+    .qodef-frame-slider-holder {
+        $bottom-distance: 36px;
+
+        margin-bottom: $bottom-distance;
+
+        .swiper-pagination-bullets {
+            bottom: -$bottom-distance !important;
+        }
+
+        .qodef-m-item {
+            padding-left: 24%;
+        }
+    }
+}
+
+@include qodefScreenSize680 {
+    .qodef-frame-slider-holder {
+        $bottom-distance: 76px;
+
+        margin-bottom: $bottom-distance;
+
+        .swiper-pagination-bullets {
+            bottom: -$bottom-distance !important;
+        }
+
+        .qodef-m-item {
+            padding-left: 82%;
+            padding-top: calc(82% * 380 / 210);
+        }
+    }
+}
+
+@include qodefScreenSize480 {
+    .qodef-frame-slider-holder {
+        $bottom-distance: 46px;
+
+        margin-bottom: $bottom-distance;
+
+        .swiper-pagination-bullets {
+            bottom: -$bottom-distance !important;
+        }
+
+        .qodef-frame-slider-image {
+            width: 90%;
+        }
+    }
+}
+
+/* ==========================================================================
+   Frame Slider shortcode responsive style - end
+   ========================================================================== */

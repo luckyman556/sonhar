@@ -1,0 +1,95 @@
+/* ==========================================================================
+   Product List responsive styles
+   ========================================================================== */
+
+.qodef-woo-product-list {
+
+	&.qodef-layout--masonry {
+
+		@include qodefScreenSize680 {
+
+			.qodef-grid-item {
+
+				&.qodef-masonry-extra-padding {
+
+					.qodef-e-inner {
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						padding: 55px 7.4% !important;
+
+						.button {
+							display: flex;
+						}
+
+						.qodef-woo-product-image,
+						.qodef-woo-product-content {
+							display: block;
+							max-width: 240px;
+							margin-left: auto;
+							margin-right: auto;
+						}
+					}
+
+					&.qodef-item--huge-square {
+
+						.qodef-e-inner {
+							padding: 70px 7.4% !important;
+						}
+					}
+				}
+			}
+		}
+
+		@include qodefScreenSize480 {
+
+			.qodef-grid-item {
+
+				&.qodef-masonry-extra-padding {
+
+					.qodef-e-inner {
+						padding: 35px 7.4% !important;
+
+						.button {
+							display: flex;
+						}
+						
+						.qodef-woo-product-image {
+							img {
+								object-fit: cover;
+							}
+						}
+
+						.qodef-woo-product-image,
+						.qodef-woo-product-content {
+							max-width: 220px;
+						}
+					}
+
+					&.qodef-item--huge-square {
+
+						.qodef-e-inner {
+							padding: 30px 7.4% !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Home 6 masonry height fix
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+	.qodef-masonry-equal-height-custom {
+
+		.qodef-woo-product-list.qodef-layout--masonry {
+
+			.qodef-grid-item {
+
+				.qodef-e-inner {
+					min-height: 442px;
+				}
+			}
+		}
+	}
+}

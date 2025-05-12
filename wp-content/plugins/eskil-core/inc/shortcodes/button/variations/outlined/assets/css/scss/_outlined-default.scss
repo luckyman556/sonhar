@@ -1,0 +1,25 @@
+.qodef-button {
+
+	&.qodef-layout--outlined {
+		@include qodefButtonOutlinedColor();
+		font-size: 16px;
+		line-height: 1.375em;
+		border-radius: 20px;
+
+		&:hover {
+			@include qodefButtonOutlinedHoverColor();
+		}
+
+		&.qodef-button-text--off {
+
+			.qodef-svg--button-arrow {
+				margin-left: 3px;
+				margin-right: 6px;
+			}
+		}
+
+		&.qodef-icon--off {
+			padding: 3px 11px 3px 11px
+		}
+	}
+}

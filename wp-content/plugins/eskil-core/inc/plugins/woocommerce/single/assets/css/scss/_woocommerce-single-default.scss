@@ -1,0 +1,33 @@
+div#qodef-woo-page.qodef--single {
+	.qodef-product-info-bottom {
+		border-radius: 4px;
+		background-color: #E6E4E4;
+		display: inline-flex;
+		padding: 5px 21px 6px;
+		margin-top: 31px;
+
+		.qodef-pib-left-holder {
+			margin-top: 2px;
+			width: 12px;
+		}
+
+		.qodef-pib-right-holder {
+			display: flex;
+			flex-direction: column;
+			margin-left: 11px;
+			font-size: 13px;
+		}
+	}
+
+	.qodef-woo-accordion-tabs {
+		~ .qodef-social-share {
+			margin-top: 0;
+		}
+	}
+	
+	@include qodefScreenSize1440 {
+		.qodef-product-info-bottom {
+			padding: 5px 17px 6px;
+		}
+	}
+}

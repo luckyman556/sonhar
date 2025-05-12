@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Blog List Minimal styles
+   ========================================================================== */
+
+.qodef-blog {
+	&.qodef-item-layout--minimal {
+		article {
+			.qodef-e-inner {
+				display: flex;
+				align-items: center;
+
+				.qodef-e-media-image {
+					max-width: 70px;
+					margin-right: 13px;
+				}
+
+				.qodef-e-title {
+					text-transform: none;
+				}
+			}
+		}
+	}
+}

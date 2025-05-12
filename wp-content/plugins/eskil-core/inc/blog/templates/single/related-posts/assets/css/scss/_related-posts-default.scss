@@ -1,0 +1,56 @@
+/* ==========================================================================
+   Related Posts styles
+   ========================================================================== */
+
+#qodef-related-posts {
+	@include qodefRelativeLayout();
+	margin-top: 75px;
+
+	.qodef--list {
+		.qodef-blog-item {
+			.qodef-e-media-image,
+			.qodef-e-media-gallery,
+			.qodef-e-media > .video,
+			.qodef-e-media > iframe {
+				margin-bottom: 16px;
+			}
+
+			.qodef-e-bottom-holder {
+				margin-top: 22px;
+			}
+
+			&.format-audio {
+				.qodef-e-media-audio {
+					bottom: 15px;
+				}
+			}
+
+			&.format-link {
+				.qodef-e-link {
+					padding: 5% 3% 5.6% 5.3%;
+					flex-direction: column;
+					text-align: center;
+
+					.qodef-e-link-icon {
+						margin: 0 auto 10px;
+						width: 30px;
+						min-width: 30px;
+					}
+				}
+			}
+
+			&.format-quote {
+				.qodef-e-quote {
+					flex-direction: column;
+					text-align: center;
+
+					.qodef-svg--quote {
+						margin: 0 auto 10px;
+						width: 30px;
+						min-width: 30px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,62 @@
+/* ==========================================================================
+   Frame Slider shortcode style - begin
+   ========================================================================== */
+$bottom-distance: 32px;
+
+.qodef-frame-slider-holder {
+    position: relative;
+    margin-bottom: $bottom-distance;
+
+    .qodef-frame-slider-image {
+        position: absolute;
+        top: -3%;
+        left: 50%;
+        width: 25%;
+        transform: translateX(-50%);
+        pointer-events: none;
+        z-index: 1;
+        text-align: center;
+
+        @include qodefScreenSize680 {
+            display: none;
+        }
+    }
+
+    .qodef-m-item {
+        height: 0;
+        margin: 0;
+        padding-left: 14.65%;
+        padding-top: calc(14.65% * 631 / 306); // 611 x 326 is ratio of notebook screen on frame image
+        width: auto;
+
+        img {
+            position: absolute;
+            top: 1px; // should be 0, frame image has antialiased transparent top
+            left: 0;
+            width: 100%;
+            height: 100%;
+            cursor: grab;
+        }
+    }
+
+    .swiper-pagination-bullets {
+        bottom: -$bottom-distance !important;
+
+        .swiper-pagination-bullet {
+            height: 10px;
+            width: 10px;
+            margin: 0 8px !important;
+            background-color: #fff;
+            border: 1px solid $heading-color;
+
+            &.swiper-pagination-bullet-active {
+                background-color: $heading-color;
+                transform: none;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Frame Slider shortcode style - end
+   ========================================================================== */

@@ -1,0 +1,187 @@
+/* ==========================================================================
+   Qode WishList For WooCommerce - Add Wishlist Button styles - begin
+   ========================================================================== */
+
+@import '../../../../../../../../../../themes/eskil/inc/woocommerce/assets/css/scss/woo-mixins';
+
+.qqvfw-quick-view-button-wrapper.qodef-eskil-theme {
+
+	.qqvfw-quick-view-button {
+		font-size: 13px;
+		font-weight: 600;
+		letter-spacing: .02em;
+		text-transform: uppercase;
+
+		&.qqvfw-type--icon-with-text {
+			display: flex;
+			align-items: center;
+			overflow: hidden;
+
+			&.qqvfw--loading {
+
+				.qqvfw-m-icon {
+					display: none;
+				}
+			}
+
+			.qqvfw-m-icon {
+				margin-right: -15px;
+				transform: translateX(-27px);
+				transition: .2s ease-out;
+				opacity: 0;
+			}
+
+			.qqvfw-m-text {
+				line-height: 1em;
+			}
+
+			&:hover {
+
+				.qqvfw-m-icon {
+					transform: translateX(1px);
+					margin-right: 6px;
+					transition: .2s ease-out;
+					opacity: 1;
+				}
+			}
+		}
+
+		&:hover {
+			color: currentColor;
+		}
+
+		.qqvfw-m-icon {
+			display: block;
+			width: 16px;
+
+			svg {
+				fill: currentColor;
+				stroke: none;
+			}
+		}
+	}
+}
+
+#qode-quick-view-for-woocommerce-pop-up.qqvfw {
+
+	.qqvfw-m-content {
+		width: var(--qqvfw-qv-width, 920px);
+		height: var(--qqvfw-qv-height, auto);
+		max-width: 90vw;
+	}
+
+	.qqvfw-m-content-inner {
+		max-height: 90vh;
+	}
+
+	.qqvfw-m-content .qqvfw-m-product>.product {
+		height: 100%;
+		display: flex;
+		align-items: center;
+
+		.qqvfw-m-summary-wrapper {
+			flex-basis: 51.1%;
+			align-self: center;
+
+			.summary {
+				padding: 37px 30px 30px 43px;
+
+				.woocommerce-product-rating {
+					margin-top: 5px;
+
+					.woocommerce-review-link {
+						display: block;
+					}
+				}
+
+				.price {
+					margin-top: 17px;
+				}
+			}
+
+			form.cart {
+				margin-top: 53px;
+			}
+
+			.woocommerce-product-details__short-description + form.cart {
+				margin-top: 14px;
+			}
+
+			.woocommerce-product-details__short-description {
+				margin-top: 45px;
+			}
+
+			.variations_form {
+
+				.select_box_image + .select2-container {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.qqvfw-m-media-wrapper {
+		max-height: 480px;
+		flex-basis: 48.9%;
+		align-self: stretch;
+
+		.qodef-woo-product-mark {
+			transform: translateX(0);
+		}
+
+		*:not(.qodef-woo-product-mark) {
+			height: 100%;
+		}
+
+		.woocommerce-product-gallery,
+		.woocommerce-product-gallery.qodef-position--left {
+
+			.woocommerce-product-gallery__wrapper {
+				margin: 0 !important;
+
+				img {
+					object-fit: contain;
+
+					@include qodefScreenSize1024 {
+						object-fit: contain;
+					}
+				}
+
+				> .woocommerce-product-gallery__image {
+					width: 100% !important;
+					margin: 0 !important;
+
+					a {
+						height: var(--qqvfw-qv-height, auto);
+					}
+				}
+
+				> .qodef-woo-thumbnails-wrapper {
+					display: none !important;
+				}
+			}
+		}
+
+		.woocommerce-product-gallery__trigger {
+			display: none;
+		}
+	}
+
+	.qqvfw-m-overlay {
+		background-color: var(--qqvfw-qv-overlay-background-color, #1d1d1d66);
+	}
+
+	.qqvfw-m-close {
+		width: 16px;
+		color: #000;
+		right: 22px;
+		top: 22px;
+		transform: rotate(0);
+		transform-origin: center;
+		transition: transform .3s ease-in-out;
+
+		&:hover {
+			transform: rotate(90deg);
+		}
+	}
+}

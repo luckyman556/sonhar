@@ -1,0 +1,42 @@
+/* ==========================================================================
+   Full Screen Menu Opener styles
+   ========================================================================== */
+
+.qodef-fullscreen-menu--opened {
+
+	#qodef-page-header,
+	#qodef-page-mobile-header {
+		visibility: hidden;
+	}
+
+	.qodef-header-logo-link,
+	.qodef-mobile-header-logo-link,
+	.qodef-header-logo-image.qodef--customizer,
+	.qodef-fullscreen-menu-opener {
+		visibility: visible;
+	}
+
+	.qodef-fullscreen-menu-opener {
+
+		.qodef-m-icon {
+
+			&.qodef--close {
+				left: 44px;
+
+				@include qodefScreenSize480 {
+					left: 32px;
+					top: -5px;
+				}
+			}
+		}
+	}
+
+	&.qodef-fullscreen-menu--hide-logo {
+
+		.qodef-header-logo-link,
+		.qodef-mobile-header-logo-link,
+		.qodef-header-logo-image.qodef--customizer {
+			visibility: hidden;
+		}
+	}
+}

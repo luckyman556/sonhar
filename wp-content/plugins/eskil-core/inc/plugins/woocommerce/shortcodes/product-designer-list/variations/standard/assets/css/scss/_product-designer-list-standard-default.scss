@@ -1,0 +1,46 @@
+/* ==========================================================================
+   Product Designer List Standard styles
+   ========================================================================== */
+
+.qodef-woo-product-designer-list {
+
+	&.qodef-item-layout--standard {
+
+		.qodef-e-designer-image {
+
+			a {
+				@include qodefRelativeLayout();
+				overflow: hidden;
+
+				img {
+					transform: scale(1.1) translateX(0);
+					transition: transform .4s ease-in-out;
+				}
+
+				&:hover {
+
+					img {
+						transform: scale(1.1) translateX(2%);
+					}
+				}
+			}
+		}
+
+		.qodef-e-inner {
+
+			.qodef-e-designer-name {
+				margin-bottom: 14px;
+				font-size: 20px;
+				text-transform: uppercase;
+			}
+		}
+
+		.qodef-e-designer-content {
+
+			.qodef-e-designer-excerpt {
+				margin-top: 0;
+				margin-bottom: 24px;
+			}
+		}
+	}
+}

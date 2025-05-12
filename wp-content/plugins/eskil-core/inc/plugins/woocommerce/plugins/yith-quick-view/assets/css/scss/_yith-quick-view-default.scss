@@ -1,0 +1,197 @@
+#yith-quick-view-modal {
+
+	&.open {
+		z-index: 10001;
+	}
+
+	.yith-quick-view-overlay {
+		background: #1d1d1d66 !important;
+	}
+
+	.yith-wcqv-wrapper {
+		height: auto !important;
+		width: 920px !important;
+		max-width: 90vw !important;
+	}
+
+	.yith-wcqv-main {
+		overflow-y: hidden !important;
+		max-height: 90vh !important;
+		box-shadow: none !important;
+	}
+
+	#yith-quick-view-content.single-product {
+
+		.qodef-woo-single-inner {
+			margin: 0;
+
+			> * {
+				padding: 0;
+			}
+		}
+
+		.qodef-woo-single-image {
+			max-height: 480px;
+			flex-basis: 48.9%;
+			align-self: stretch;
+
+			.qodef-woo-product-mark {
+				transform: translateX(0);
+				left: 13px;
+			}
+
+			*:not(.qodef-woo-product-mark) {
+				height: 100%;
+			}
+
+			.woocommerce-product-gallery {
+
+				.woocommerce-product-gallery__wrapper {
+					margin: 0 !important;
+
+					img {
+						object-fit: cover;
+					}
+
+					> .woocommerce-product-gallery__image {
+						width: 100% !important;
+						margin: 0 !important;
+					}
+
+					> .qodef-woo-thumbnails-wrapper {
+						display: none !important;
+					}
+				}
+			}
+		}
+
+		.entry-summary {
+			flex-basis: 51.1%;
+			align-self: center;
+			padding: 37px 30px 30px 43px;
+
+			.qodef-woo-product-title {
+				@include qodefH4Style();
+			}
+
+			.woocommerce-product-rating {
+				margin-top: 5px;
+
+				.woocommerce-review-link {
+					display: block;
+				}
+			}
+
+			.price {
+				margin-top: 17px;
+			}
+		}
+
+		form.cart {
+			margin-top: 53px;
+		}
+
+		.woocommerce-product-details__short-description + form.cart {
+			margin-top: 14px;
+		}
+
+		.woocommerce-product-details__short-description {
+			margin-top: 45px;
+		}
+
+		.variations_form {
+
+			.select_box_image + .select2-container {
+				display: none;
+			}
+		}
+	}
+
+	#yith-quick-view-close {
+		border: 0 !important;
+		font-size: 0;
+		line-height: 1;
+		position: absolute;
+		right: 22px;
+		top: 22px;
+		width: 16px;
+		height: 16px;
+		color: #000;
+		opacity: 1;
+		transform: rotate(0);
+		transform-origin: center;
+		transition: transform .3s ease-in-out;
+
+		&:after {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 100%;
+			line-height: 25px;
+			padding: 0;
+			position: relative;
+			background-image: url('../img/close.svg');
+			background-size: contain;
+		}
+
+		&:hover {
+			transform: rotate(90deg);
+		}
+	}
+
+	.qodef-yith-wcqv-link {
+		margin-top: 38px;
+	}
+}
+
+.qodef-yith-wcqv--predefined {
+
+	.yith-wcqv-button {
+		font-size: 0 !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		line-height: 1 !important;
+		background-color: transparent !important;
+		overflow: hidden;
+
+		&::before {
+			display: inline-block;
+			content: "";
+			width: 16px;
+			height: 16px;
+			margin-right: -15px;
+			background-image: url('../img/quick_view.svg');
+			background-size: contain;
+			background-position: center center;
+			background-repeat: no-repeat;
+			transform: translateX(-27px);
+			transition: .2s ease-out;
+			opacity: 0;
+		}
+
+		&:hover {
+
+			&::before {
+				transform: translateX(1px);
+				margin-right: 6px;
+				transition: .2s ease-out;
+				opacity: 1;
+			}
+		}
+	}
+
+	.qodef-woo-product-image-inner {
+
+		.yith-wcqv-button {
+			color: #fff !important;
+
+			&:hover {
+				color: var(--qode-main-color) !important;
+			}
+
+			.blockUI {
+				display: none !important;
+			}
+		}
+	}
+}

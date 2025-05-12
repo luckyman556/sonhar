@@ -1,0 +1,15 @@
+.elementor-element {
+	&.qodef-sticky-column {
+		align-self: flex-start;
+
+		> div {
+			@include qodefScreenSize1024 {
+				.touchevents & {
+					height: unset;
+					position: unset !important;
+					width: auto !important;
+				}
+			}
+		}
+	}
+}

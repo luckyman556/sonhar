@@ -1,0 +1,66 @@
+/* ==========================================================================
+   Qode WishList For WooCommerce - responsive styles - begin
+   ========================================================================== */
+
+.qwfw-wishlist-table {
+
+	&.qodef-eskil-theme {
+
+		.qwfw-m-items.shop_table {
+
+			@include qodefScreenSize1024 {
+
+				td,
+				th {
+
+					&.product-name {
+						padding-left: 17px;
+					}
+				}
+			}
+
+			@include qodefScreenSize768 {
+
+				td,
+				th {
+
+					&.product-thumbnail {
+						padding-left: 10px !important;
+						width: 250px;
+					}
+				}
+			}
+
+			@include qodefScreenSize680 {
+
+				.qwfw-e-item {
+
+					&.product-thumbnail {
+						padding-left: 20px !important;
+						width: 100px;
+					}
+
+					&.product-name {
+						width: auto;
+						padding: 0 20px 20px;
+					}
+
+					&.product-price {
+						padding: 0 20px 20px;
+					}
+
+					&.product-add-to-cart {
+						width: auto;
+						min-width: auto;
+						padding: 0 20px 20px;
+						text-align: left;
+
+						.qwfw-e-item-inner {
+							align-items: flex-start;
+						}
+					}
+				}
+			}
+		}
+	}
+}

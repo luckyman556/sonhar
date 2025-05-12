@@ -1,0 +1,50 @@
+/* ==========================================================================
+   Separator shortcode styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Separator shortcode styles
+   ========================================================================== */
+
+.qodef-separator {
+	font-size: 0;
+	height: auto;
+	line-height: 1;
+	position: relative;
+
+	.qodef-m-line {
+		@include qodefRelativeLayout();
+
+		border-bottom: 1px solid $border-color;
+		margin: 10px 0;
+	}
+
+	&.qodef-position {
+
+		&--center {
+			text-align: center;
+		}
+
+		&--left {
+			text-align: left;
+		}
+
+		&--right {
+			text-align: right;
+		}
+	}
+
+	&.qodef-disabled {
+		$separator-breakpoints-map: ('1024', '768', '680', '480');
+
+		@for $i from 0 to length($separator-breakpoints-map) {
+
+			&--#{nth($separator-breakpoints-map, $i+1)} {
+
+				@media only screen and (max-width: #{nth($separator-breakpoints-map, $i+1)}px) {
+					display: none;
+				}
+			}
+		}
+	}
+}

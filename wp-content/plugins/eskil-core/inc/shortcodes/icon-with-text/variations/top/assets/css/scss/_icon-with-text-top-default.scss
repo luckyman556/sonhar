@@ -1,0 +1,34 @@
+/* ==========================================================================
+   Icon With Text shortcode styles
+   ========================================================================== */
+
+.qodef-icon-with-text {
+
+	&.qodef-layout--top {
+		
+		.qodef-m-title {
+			margin-top: 11px;
+			text-transform: uppercase;
+		}
+
+		&.qodef-alignment--center {
+			text-align: center;
+		}
+
+		&.qodef-alignment--left {
+			text-align: left;
+		}
+
+		&.qodef-alignment--right {
+			text-align: right;
+		}
+
+		&.qodef--retina {
+
+			img {
+				max-width: 50%;
+				margin: 0 auto;
+			}
+		}
+	}
+}

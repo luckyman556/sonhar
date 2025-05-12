@@ -1,0 +1,79 @@
+/* ==========================================================================
+   Product List Info on Image styles
+   ========================================================================== */
+
+.qodef-woo-product-list {
+
+	&.qodef-item-layout--info-minimal {
+
+		.qodef-woo-product-image {
+
+			.qodef-woo-product-image-inner {
+				display: none;
+			}
+		}
+
+		.qodef-woo-price {
+			position: relative;
+			font-size: 14px;
+			font-weight: 500;
+			overflow: hidden;
+
+			.price {
+				margin-top: 3px;
+				opacity: 1;
+				transform: translateY(0);
+				transition: opacity .3s ease-out, transform .4s ease-in-out;
+			}
+
+			.qodef-add-to-cart-holder {
+				position: absolute;
+				width: 100%;
+				bottom: 0;
+				opacity: 0;
+				transform: translateY(100%);
+				transition: opacity .3s ease-out, transform .4s ease-in-out;
+			}
+		}
+
+		.qodef-e-inner {
+
+			&:hover {
+
+				.price {
+					opacity: 0;
+					transform: translateY(100%);
+				}
+
+				.qodef-add-to-cart-holder {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+		}
+
+		.qodef-woo-product-content {
+
+			.qodef-woo-product-title,
+			.qodef-woo-price {
+				text-align: center;
+			}
+
+			.price {
+				justify-content: center;
+			}
+
+			.button,
+			.added_to_cart {
+				width: auto;
+				height: auto;
+				padding: 0;
+				border: none;
+				font-size: 13px;
+				font-weight: 600;
+				color: #000;
+				background-color: transparent;
+			}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+/* ==========================================================================
+   Simple Links shortcode styles
+   ========================================================================== */
+
+.qodef-simple-links {
+	@include qodefRelativeLayout();
+
+	.qodef-m-content {
+		display: flex;
+		overflow: hidden;
+		flex-direction: column;
+		align-items: flex-start;
+
+		.qodef-m-item-link {
+			align-items: center;
+			display: flex;
+			transition: $transition-timing;
+
+			&:hover {
+				font-weight: 600;
+				font-size: 15px;
+				transition: transform $transition-timing;
+			}
+		}
+	}
+
+	&.qodef-icon-enabled {
+		.qodef-m-content .qodef-m-item-link {
+			text-transform: uppercase;
+			transform: translateX(-19px);
+			margin-bottom: 13px;
+
+			svg {
+				padding-right: 3px;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&:hover {
+				font-weight: 400;
+				font-size: 16px;
+				transform: translateX(0);
+				transition: $transition-timing;
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+#yith-quick-view-modal {
+
+    #yith-quick-view-content.single-product {
+
+        @include qodefScreenSize768 {
+
+            form.cart {
+                flex-direction: column;
+            }
+
+            .qodef-quantity-buttons {
+	            margin-bottom: 12px;
+            }
+
+            .qodef-woo-single-image,
+            .entry-summary {
+                flex-basis: 100%;
+            }
+        }
+
+        @include qodefScreenSize680 {
+
+            .qodef-woo-single-inner {
+                flex-wrap: wrap;
+            }
+
+            .qodef-woo-single-image {
+                max-height: 40vh;
+            }
+
+            .woocommerce-product-details__short-description {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+/* ==========================================================================
+   Product Designer List responsive styles
+   ========================================================================== */
+
+//Single desinger styles
+
+.tax-product_designer {
+
+	@include qodefScreenSize768 {
+
+		.qodef-designer-related {
+
+			.qodef-woo-product-list {
+
+				> .qodef-grid-inner {
+
+					> .qodef-grid-item {
+						width: 33.3333% !important;
+
+						&:nth-child(2n+1) {
+							clear: none !important;
+						}
+
+						&:nth-child(3n+1) {
+							clear: both !important;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@include qodefScreenSize680 {
+
+		.qodef-designer-related {
+
+			.qodef-woo-product-list {
+
+				> .qodef-grid-inner {
+
+					> .qodef-grid-item {
+						width: 100% !important;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,71 @@
+/* ==========================================================================
+   Image Gallery shortcode styles
+   ========================================================================== */
+
+.qodef-image-gallery {
+	
+	&.qodef-swiper-container {
+
+		.qodef-e {
+			padding: 14px;
+			background-color: rgba(255, 255, 255, .16);
+			border: 1px solid rgba(255, 255, 255, .4);
+			border-radius: 4px;
+		}
+	}
+}
+
+.qodef-image-gallery-wrapper {
+	
+	.qodef-image-wrapper {
+		img {
+			cursor: grab;
+		}
+	}
+	
+	.swiper-button-prev {
+		
+		&.swiper-button-outside {
+			left: -106px!important;
+		}
+	}
+	
+	.swiper-button-next {
+		
+		&.swiper-button-outside {
+			right: -106px!important;
+		}
+	}
+	
+	&.qodef-skin--light {
+
+		.swiper-button-prev,
+		.swiper-button-next {
+			color: #fff;
+			border-radius: 20px;
+			transition: all $transition-timing;
+
+			.qodef-svg--slider-arrow-left,
+			.qodef-svg--slider-arrow-right {
+				stroke: #fff;
+			}
+
+			&:hover {
+				color: #000;
+				background-color: white;
+				border-radius: 4px;
+			}
+		}
+		
+		.swiper-pagination-bullet {
+			background-color: #fff;
+		}
+	}
+	
+	@include qodefScreenSize680 {
+		.swiper-button-prev,
+		.swiper-button-next {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,34 @@
+1.2
+- Added WordPress 6.6.1 compatibility
+- Added WooCommerce 9.1.4 compatibility
+- Added QODE Variation Swatches for WooCommerce compatibility
+- Added QODE Quick View for WooCommerce compatibility
+- Added QODE Wishlist for WooCommerce compatibility
+- Added wpml-config.xml file to further improve WPML compatibility
+- Added support for Filter By Price block widget
+- Updated Eskil Core to 1.2
+- Updated Qode Framework plugin to 1.2.3
+- Updated Revolution Slider plugin to 6.7.15
+- Updated Swiper script to 8.4.5
+- Improved import functionality
+- Improved the DropDown Cart Widget and Side Area Cart Widget by preventing them from loading on the cart page
+- Fixed product search widget not searching for products
+- Fixed Slider Arrows custom SVG global options
+- Fixed elementor section options not working when Elementor Element Caching is enabled
+
+1.1
+- Added WordPress 6.1.1 compatibility
+- Added WooCommerce 7.3.0 compatibility
+- Added eskil_validate_pagination_data helper function
+- Updated Qode Framework plugin to 1.2
+- Updated Eskil Core to 1.1
+- Updated Revolution Slider plugin to 6.6.10
+- Fixed missing Eskil Membership plugin in plugins activation file
+- Fixed potential security vulnerability for theme and qode-framework
+- Fixed custom sidebars import
+- Improved Google Maps API with callback function
+- Changed default child theme screenshot image
+- Disabled Google Fonts loading if global option (Enable Google Fonts) is set to No
+
+1.0.1
+- Fixed shop filter show/hide functionality

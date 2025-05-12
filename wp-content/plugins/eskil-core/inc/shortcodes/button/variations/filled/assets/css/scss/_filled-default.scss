@@ -1,0 +1,15 @@
+.qodef-button {
+    &.qodef-layout--filled {
+        font-size: 18px;
+        line-height: 1.22em;
+        border-radius: 4px;
+
+        &.qodef-html--link {
+            @include qodefButtonFilledColor();
+    
+            &:hover {
+                @include qodefButtonFilledHoverColor();
+            }
+        }
+    }
+}

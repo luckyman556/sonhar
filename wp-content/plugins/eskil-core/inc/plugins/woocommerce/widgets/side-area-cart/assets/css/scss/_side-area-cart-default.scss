@@ -1,0 +1,338 @@
+/* ==========================================================================
+   WooCommerce Side Area Cart styles
+   ========================================================================== */
+
+$content-width: 430px;
+$content-padding: 49px 0 74px; // 74 is action button height + 20
+$side-padding: 0 35px;
+
+.widget_eskil_core_woo_side_area_cart {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+
+	.qodef-widget-side-area-cart-inner {
+		display: flex;
+		height: 100%;
+		align-items: center;
+		justify-content: center;
+
+		.qodef-m-inner {
+			@include qodefRelativeLayout();
+			height: 100%;
+		}
+
+		.qodef-m-opener-text {
+			margin: 0 4px 0 8px;
+			font-size: 15px;
+		}
+
+		.qodef-m-opener {
+			position: relative;
+			display: flex;
+			align-items: center;
+			height: 100%;
+
+			svg {
+				margin-top: 5px;
+			}
+		}
+
+		.qodef-widget-side-area-cart-content {
+			position: fixed;
+			top: 0;
+			right: -$content-width;
+			height: 100vh;
+			width: $content-width;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			padding: $content-padding;
+			background-color: $background-color;
+			overflow: hidden;
+			visibility: hidden;
+			z-index: 9999;
+			transition: $sliding-area-transition;
+
+			> .qodef-e-title {
+				padding: 0 43px;
+			}
+
+			.admin-bar & {
+				top: 32px;
+				height: calc(100vh - 32px);
+			}
+		}
+
+		.qodef-m-close {
+			position: absolute;
+			top: 22px;
+			right: 26px;
+			display: block;
+			font-size: 34px;
+			z-index: 1000;
+			transform: rotate(0);
+			transform-origin: center;
+			transition: transform .3s ease-in-out;
+
+			&:hover {
+				transform: rotate(90deg);
+			}
+		}
+
+		.qodef-m-posts-not-found {
+			padding: 0 43px;
+		}
+
+		.qodef-woo-side-area-cart {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			margin-top: 14px !important;
+			margin-bottom: 16px !important;
+			padding: 0 43px !important;
+		}
+
+		.qodef-woo-side-area-cart-item {
+			position: relative;
+			display: inline-flex;
+			align-items: flex-start;
+			width: calc(100% + 10px);
+			margin: 16px 0 16px !important;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&:last-of-type {
+				margin-bottom: 0 !important;
+			}
+		}
+
+		.qodef-e-image {
+			flex-shrink: 0;
+			width: 112px;
+			margin-right: 15px;
+
+			a, img {
+				display: block;
+			}
+		}
+
+		.qodef-e-content {
+			width: 100%;
+			padding-right: 20px;
+		}
+
+		.qodef-e-title {
+			margin: 0;
+
+			a {
+				&:hover {
+					color: #505050;
+				}
+			}
+		}
+
+		.qodef-e-price {
+			margin: 8px 0 0;
+			font-size: 14px;
+		}
+
+		.qodef-e-quantity {
+			font-size: 10px;
+			margin: 0;
+		}
+
+		.remove {
+			position: absolute;
+			top: 16px;
+			right: 0;
+			font-size: 20px;
+			line-height: 1;
+			z-index: 5;
+			width: 20px;
+			height: 20px;
+			border: 1px solid #ccc;
+			border-radius: 50px;
+			transform: rotate(0);
+			transform-origin: center;
+			transition: transform .3s ease-in-out;
+
+			svg {
+				width: 19px;
+				height: 19px;
+				color: #505050;
+				position: absolute;
+				left: -1px;
+				top: -1px;
+			}
+
+			&:hover {
+				transform: rotate(90deg);
+			}
+		}
+
+		.qodef-m-order-details {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin: 17px 43px 122px;
+			padding: 17px 0 15px;
+			border-top: 1px solid $border-color;
+			border-bottom: 1px solid $border-color;
+
+			> * {
+				margin: 0;
+				font-size: 20px;
+			}
+
+			.qodef-m-order-label {
+				text-transform: uppercase;
+			}
+		}
+
+		.qodef-m-action {
+			position: absolute;
+			bottom: 29px;
+			left: 39px;
+			width: calc(100% - 78px);
+			display: flex;
+			flex-direction: column;
+		}
+
+		.qodef-m-action-link {
+			&.qodef--cart,
+			&.qodef--shop {
+				@include qodefButtonDefaultStyle();
+				@include qodefButtonSize(full);
+				@include qodefButtonFilledColor();
+				margin-bottom: 2px;
+				font-size: 18px;
+				border-radius: 4px;
+				padding: 10px 20px 11px;
+
+				&:hover {
+					@include qodefButtonFilledHoverColor();
+				}
+			}
+
+			&.qodef--cart,
+			&.qodef--shop {
+				transition: background-color $transition-timing;
+
+				&:before {
+					content: url(../img/add_to_cart_light.svg);
+					position: relative;
+					width: 0;
+					overflow: hidden;
+					text-align: left;
+					line-height: 1em;
+					transition: width .2s ease-in-out;
+				}
+
+				&:hover {
+					background-color: #1d1d1d;
+
+					&:before {
+						width: 18px;
+						transition: width .2s ease-in-out;
+					}
+				}
+			}
+
+			&.qodef--checkout {
+				text-align: center;
+				padding: 10px;
+				font-size: 13px;
+				font-weight: 600;
+				text-transform: uppercase;
+
+				.qodef-e-icon-holder {
+					display: inline-flex;
+					justify-content: center;
+					overflow: hidden;
+				}
+
+				.qodef-e-icon {
+					display: flex;
+					align-items: center;
+					position: relative;
+					left: -18px;
+					transition: left $transition-timing;
+
+					svg {
+						width: 14px;
+						margin-right: 5px;
+					}
+				}
+
+				.qodef-e-text {
+					margin-left: -18px;
+					transition: margin-left $transition-timing;
+				}
+
+				&:hover {
+					.qodef-e-icon {
+						left: 0;
+					}
+
+					.qodef-e-text {
+						margin-left: 0;
+					}
+				}
+			}
+		}
+
+		&.qodef--opened {
+
+			.qodef-widget-side-area-cart-content {
+				right: 0;
+				visibility: visible;
+			}
+		}
+	}
+}
+
+.qodef-woo-side-area-cart-cover {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #1d1d1d;
+	opacity: 0;
+	overflow: hidden;
+	transition: $sliding-area-transition;
+	z-index: -1;
+
+	.qodef-side-cart--opened & {
+		right: #{$content-width};
+		opacity: .4;
+		z-index: 1002;
+	}
+}
+
+.qodef-side-cart--opened {
+	#qodef-page-mobile-header-inner {
+		.qodef-fullscreen-menu-opener {
+			&.qodef--opened {
+				visibility: hidden;
+				opacity: 0;
+				pointer-events: none;
+			}
+		}
+	}
+}
+
+#qodef-page-mobile-header-inner {
+	.qodef-fullscreen-menu-opener {
+		visibility: visible;
+		opacity: 1;
+		pointer-events: all;
+		transition: opacity $transition-timing;
+	}
+}

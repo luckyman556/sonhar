@@ -1,0 +1,432 @@
+# Translation of Themes - Twenty Twenty-Three in Assamese
+# This file is distributed under the same license as the Themes - Twenty Twenty-Three package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-11-01 12:54:58+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.0\n"
+"Language: as_IN\n"
+"Project-Id-Version: Themes - Twenty Twenty-Three\n"
+
+#. Description of the theme
+#: style.css
+#, gp-priority: high
+msgid "Twenty Twenty-Three is designed to take advantage of the new design tools introduced in WordPress 6.1. With a clean, blank base as a starting point, this default theme includes ten diverse style variations created by members of the WordPress community. Whether you want to build a complex or incredibly simple website, you can do it quickly and intuitively through the bundled styles or dive into creation and full customization yourself."
+msgstr "WordPress 6.1-ত আগবঢ়োৱা নতুন ডিজাইন-সম্বন্ধীয় সঁজুলিবোৰৰ সুবিধা ল’বলৈ Twenty Twenty-Three ডিজাইন কৰা হৈছে। আৰম্ভণিৰ বিন্দুৰূপে এটা পৰিষ্কাৰ, খালী ভিত্তিসহ এই ডিফ’ল্ট থীমটোত WordPress সমাজৰ সদস্যসকলে সৃষ্টি কৰা দহটা বৈচিত্ৰ্যপূৰ্ণ শৈলীৰ ভিন্নতা অন্তৰ্ভুক্ত। আপুনি লাগিলে এটা জটিল ৱেবছাইটেই সাজিবলৈ বিচাৰক বা এটা অবিশ্বাস্যভাৱে সহজবোধ্য ৱেবছাইট, আপুনি ইয়াৰ লগত অহা শৈলীবোৰৰ জৰিয়তে দ্ৰুতভাৱে আৰু স্বজ্ঞানেৰেই ৱেবছাইট সাজিব পাৰে নাইবা নিজেই সৃষ্টি আৰু সম্পূৰ্ণ কাষ্টমাইজ কৰাত লাগি যাওক।"
+
+#. Theme Name of the theme
+#: style.css
+#, gp-priority: high
+msgid "Twenty Twenty-Three"
+msgstr "Twenty Twenty-Three"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Post Meta"
+msgstr "প’ষ্টৰ মেটা"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer"
+msgstr "পাদশাৰী"
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Header"
+msgstr "শিৰোশাৰী"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Source Serif Pro"
+msgstr "ছ’ৰ্চ ছেৰিফ প্ৰ’"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "System Font"
+msgstr "ছীষ্টেমৰ ফণ্ট"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "Inter"
+msgstr "Inter"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "IBM Plex Mono"
+msgstr "IBM Plex Mono"
+
+#: theme.json
+msgctxt "Font family name"
+msgid "DM Sans"
+msgstr "DM Sans"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "404"
+msgstr "404"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Blog (Alternative)"
+msgstr "ব্লগ (বৈকল্পিক)"
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Blank"
+msgstr "খালী"
+
+#: styles/whisper.json
+msgctxt "Style variation name"
+msgid "Whisper"
+msgstr "গুণ্‌গুণনি"
+
+#: styles/sherbet.json
+msgctxt "Gradient name"
+msgid "Tertiary to Secondary to Primary Fixed"
+msgstr "তৃতীয়কৰ পৰা মাধ্যমিকৰ পৰা প্ৰাথমিকলৈ অচল"
+
+#: styles/sherbet.json
+msgctxt "Gradient name"
+msgid "Primary to Secondary to Tertiary Fixed"
+msgstr "প্ৰাথমিকৰ পৰা মাধ্যমিকৰ পৰা তৃতীয়কলৈ অচল"
+
+#: styles/sherbet.json
+msgctxt "Gradient name"
+msgid "Primary to Secondary to Tertiary"
+msgstr "প্ৰাথমিকৰ পৰা মাধ্যমিকৰ পৰা তৃতীয়কলৈ"
+
+#: styles/sherbet.json
+msgctxt "Style variation name"
+msgid "Sherbet"
+msgstr "ছৰ্বত"
+
+#: styles/pitch.json
+msgctxt "Font size name"
+msgid "2X Large"
+msgstr "2গুণ ডাঙৰ"
+
+#: styles/pitch.json
+msgctxt "Font size name"
+msgid "Extra Large"
+msgstr "অত্যন্ত ডাঙৰ"
+
+#: styles/pitch.json
+msgctxt "Font size name"
+msgid "Large"
+msgstr "ডাঙৰ"
+
+#: styles/pitch.json
+msgctxt "Font size name"
+msgid "Medium"
+msgstr "মজলীয়া"
+
+#: styles/pitch.json
+msgctxt "Font size name"
+msgid "small"
+msgstr "সৰু"
+
+#: styles/pitch.json
+msgctxt "Space size name"
+msgid "7"
+msgstr "7"
+
+#: styles/pitch.json
+msgctxt "Style variation name"
+msgid "Pitch"
+msgstr "স্বৰকম্পন"
+
+#: styles/pilgrimage.json
+msgctxt "Gradient name"
+msgid "Dots"
+msgstr "বিন্দু"
+
+#: styles/pilgrimage.json
+msgctxt "Gradient name"
+msgid "Base to Primary"
+msgstr "ভিত্তিৰ পৰা প্ৰাথমিকলৈ"
+
+#: styles/pilgrimage.json
+msgctxt "Gradient name"
+msgid "Tertiary to Secondary"
+msgstr "তৃতীয়কৰ পৰা মাধ্যমিকলৈ"
+
+#: styles/pilgrimage.json
+msgctxt "Gradient name"
+msgid "Secondary to Primary"
+msgstr "মাধ্যমিকৰ পৰা প্ৰাথমিকলৈ"
+
+#: styles/pilgrimage.json
+msgctxt "Gradient name"
+msgid "Primary to Secondary"
+msgstr "প্ৰাথমিকৰ পৰা মাধ্যমিকলৈ"
+
+#: styles/pilgrimage.json
+msgctxt "Style variation name"
+msgid "Pilgrimage"
+msgstr "তীৰ্থযাত্ৰা"
+
+#: styles/marigold.json
+msgctxt "Font size name"
+msgid "Gigantic"
+msgstr "দৈত্যাকাৰ"
+
+#: styles/marigold.json
+msgctxt "Font size name"
+msgid "Huge"
+msgstr "বিশাল"
+
+#: styles/marigold.json
+msgctxt "Font size name"
+msgid "Normal"
+msgstr "স্বাভাৱিক"
+
+#: styles/marigold.json
+msgctxt "Font size name"
+msgid "Tiny"
+msgstr "অকণমান"
+
+#: styles/marigold.json styles/pitch.json theme.json
+msgctxt "Space size name"
+msgid "6"
+msgstr "6"
+
+#: styles/marigold.json styles/pitch.json theme.json
+msgctxt "Space size name"
+msgid "5"
+msgstr "5"
+
+#: styles/marigold.json styles/pitch.json theme.json
+msgctxt "Space size name"
+msgid "4"
+msgstr "4"
+
+#: styles/marigold.json styles/pitch.json theme.json
+msgctxt "Space size name"
+msgid "3"
+msgstr "3"
+
+#: styles/marigold.json styles/pitch.json theme.json
+msgctxt "Space size name"
+msgid "2"
+msgstr "2"
+
+#: styles/marigold.json styles/pitch.json theme.json
+msgctxt "Space size name"
+msgid "1"
+msgstr "1"
+
+#: styles/marigold.json
+msgctxt "Style variation name"
+msgid "Marigold"
+msgstr "নাৰ্জী-ফুল"
+
+#: styles/grapes.json
+msgctxt "Style variation name"
+msgid "Grapes"
+msgstr "আঙুৰ"
+
+#: styles/electric.json
+msgctxt "Style variation name"
+msgid "Electric"
+msgstr "বিদ্যুৎ"
+
+#: styles/canary.json
+msgctxt "Style variation name"
+msgid "Canary"
+msgstr "হালধীয়া চৰাই"
+
+#: styles/block-out.json styles/canary.json styles/pilgrimage.json
+#: styles/sherbet.json
+msgctxt "Duotone name"
+msgid "Default filter"
+msgstr "ডিফ’ল্ট ফিল্টাৰ"
+
+#: styles/block-out.json
+msgctxt "Style variation name"
+msgid "Block out"
+msgstr "অৱৰোধ"
+
+#: styles/aubergine.json styles/block-out.json styles/canary.json
+#: styles/electric.json styles/grapes.json styles/marigold.json
+#: styles/pilgrimage.json styles/pitch.json styles/sherbet.json
+#: styles/whisper.json theme.json
+msgctxt "Color name"
+msgid "Tertiary"
+msgstr "তৃতীয়ক"
+
+#: styles/aubergine.json styles/block-out.json styles/canary.json
+#: styles/electric.json styles/grapes.json styles/marigold.json
+#: styles/pilgrimage.json styles/pitch.json styles/sherbet.json
+#: styles/whisper.json theme.json
+msgctxt "Color name"
+msgid "Secondary"
+msgstr "মাধ্যমিক"
+
+#: styles/aubergine.json styles/block-out.json styles/canary.json
+#: styles/electric.json styles/grapes.json styles/marigold.json
+#: styles/pilgrimage.json styles/pitch.json styles/sherbet.json
+#: styles/whisper.json theme.json
+msgctxt "Color name"
+msgid "Primary"
+msgstr "প্ৰাথমিক"
+
+#: styles/aubergine.json styles/block-out.json styles/canary.json
+#: styles/electric.json styles/grapes.json styles/marigold.json
+#: styles/pilgrimage.json styles/pitch.json styles/sherbet.json
+#: styles/whisper.json theme.json
+msgctxt "Color name"
+msgid "Contrast"
+msgstr "প্ৰভেদ"
+
+#: styles/aubergine.json styles/block-out.json styles/canary.json
+#: styles/electric.json styles/grapes.json styles/marigold.json
+#: styles/pilgrimage.json styles/pitch.json styles/sherbet.json
+#: styles/whisper.json theme.json
+msgctxt "Color name"
+msgid "Base"
+msgstr "ভিত্তি"
+
+#: styles/aubergine.json
+msgctxt "Gradient name"
+msgid "Primary to Tertiary"
+msgstr "প্ৰাথমিকৰ পৰা তৃতীয়কলৈ"
+
+#: styles/aubergine.json styles/pilgrimage.json
+msgctxt "Gradient name"
+msgid "Tertiary to Primary"
+msgstr "তৃতীয়কৰ পৰা প্ৰাথমিকলৈ"
+
+#: styles/aubergine.json
+msgctxt "Gradient name"
+msgid "Base to Secondary to Base"
+msgstr "ভিত্তিৰ পৰা মাধ্যমিকৰ পৰা ভিত্তিলৈ"
+
+#: styles/aubergine.json
+msgctxt "Gradient name"
+msgid "Secondary to Base"
+msgstr "মাধ্যমিকৰ পৰা ভিত্তিলৈ"
+
+#: styles/aubergine.json
+msgctxt "Style variation name"
+msgid "Aubergine"
+msgstr "বেঙেনা"
+
+#: patterns/post-meta.php:64
+msgctxt "Label for a list of post tags"
+msgid "Tags:"
+msgstr "টেগবোৰ:"
+
+#: patterns/post-meta.php:48
+msgctxt "Preposition to show the relationship between the post and its author"
+msgid "by"
+msgstr "এওঁৰ দ্বাৰা"
+
+#: patterns/post-meta.php:36
+msgctxt "Preposition to show the relationship between the post and its categories"
+msgid "in"
+msgstr "ইয়াত"
+
+#: patterns/post-meta.php:28
+msgctxt "Verb to explain the publication status of a post"
+msgid "Posted"
+msgstr "প’ষ্ট কৰা হৈছে"
+
+#: patterns/post-meta.php
+msgctxt "Pattern title"
+msgid "Post Meta"
+msgstr "প’ষ্টৰ মেটা"
+
+#: patterns/hidden-no-results.php:10
+msgctxt "Message explaining that there are no results returned from a search"
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "ক্ষমা কৰিব, কিন্তু আপোনাৰ সন্ধানৰ সৈতে একো মিল নাখালে। অনুগ্ৰহ কৰি অন্য মূলশব্দৰে পুনৰ চেষ্টা কৰক।"
+
+#: patterns/hidden-no-results.php
+msgctxt "Pattern title"
+msgid "Hidden No Results Content"
+msgstr "লুকুৱাই ৰখা ফলাফল নথকা বিষয়বস্তু"
+
+#: patterns/hidden-comments.php:13
+msgctxt "Title of comments section"
+msgid "Comments"
+msgstr "মন্তব্যবোৰ"
+
+#: patterns/hidden-comments.php
+msgctxt "Pattern title"
+msgid "Hidden Comments"
+msgstr "লুকুৱাই ৰখা মন্তব্যবোৰ"
+
+#: patterns/hidden-404.php:22 patterns/hidden-no-results.php:14
+msgid "Search"
+msgstr "সন্ধান"
+
+#: patterns/hidden-404.php:22 patterns/hidden-no-results.php:14
+msgctxt "placeholder for search field"
+msgid "Search..."
+msgstr "সন্ধান কৰক..."
+
+#: patterns/hidden-404.php:22 patterns/hidden-no-results.php:14
+msgctxt "label"
+msgid "Search"
+msgstr "সন্ধান"
+
+#: patterns/hidden-404.php:19
+msgctxt "Message to convey that a webpage could not be found"
+msgid "This page could not be found."
+msgstr "এই পৃষ্ঠাখন পোৱা নগ’ল।"
+
+#: patterns/hidden-404.php:13
+msgctxt "Error code for a webpage that is not found."
+msgid "404"
+msgstr "404"
+
+#: patterns/hidden-404.php
+msgctxt "Pattern title"
+msgid "Hidden 404"
+msgstr "গুপ্ত 404"
+
+#. Translators: WordPress link.
+#: patterns/footer-default.php:19
+msgid "Proudly powered by %s"
+msgstr "%s-ৰ দ্বাৰা গৌৰৱেৰে চালিত"
+
+#: patterns/footer-default.php
+msgctxt "Pattern title"
+msgid "Default Footer"
+msgstr "ডিফ’ল্ট পাদশাৰী"
+
+#: patterns/call-to-action.php:24
+msgctxt "sample content for call to action button"
+msgid "Get In Touch"
+msgstr "যোগাযোগ কৰক"
+
+#: patterns/call-to-action.php:15
+msgctxt "sample content for call to action"
+msgid "Got any book recommendations?"
+msgstr "কোনো কিতাপৰ পৰামৰ্শ আছেনে?"
+
+#: patterns/call-to-action.php
+msgctxt "Pattern title"
+msgid "Call to action"
+msgstr "কল টু একশ্যন"
+
+#. Author URI of the theme
+#: style.css patterns/footer-default.php:20
+#, gp-priority: low
+msgid "https://wordpress.org"
+msgstr "https://as.wordpress.org"
+
+#. Author of the theme
+#: style.css
+#, gp-priority: low
+msgid "the WordPress team"
+msgstr "WordPress দল"
+
+#. Theme URI of the theme
+#: style.css
+#, gp-priority: low
+msgid "https://wordpress.org/themes/twentytwentythree"
+msgstr "https://as.wordpress.org/themes/twentytwentythree"

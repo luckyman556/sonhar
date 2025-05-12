@@ -1,0 +1,46 @@
+/* ==========================================================================
+   Header layout styles
+   ========================================================================== */
+
+$left-right-spacing: 12px; // Same size needs to be as in eskil-core/inc/header/assets/css/scss/_common-default.scss
+
+.qodef-header--centered {
+	
+	#qodef-page-header {
+		height: 150px;
+	}
+	
+	#qodef-page-header-inner {
+		flex-direction: column;
+		justify-content: center;
+		
+		> div {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			height: 100%;
+			width: 100%;
+			
+			.qodef-widget-holder {
+				margin-left: 0;
+				width: 100%;
+				
+				&.qodef--one {
+					justify-content: flex-end;
+				}
+			}
+			
+			.qodef-header-navigation {
+				margin: 0 $left-right-spacing * 2;
+			}
+		}
+	}
+	
+	.qodef-header-sticky {
+		.qodef-header-navigation {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}

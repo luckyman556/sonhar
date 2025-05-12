@@ -1,0 +1,33 @@
+.qodef-banner {
+
+	&.qodef-layout--link-overlay {
+
+		.qodef-m-content-inner {
+			align-items: flex-start;
+			flex-direction: column;
+			justify-content: flex-start;
+			margin: 33px 32px;
+			overflow: hidden;
+		}
+
+		.qodef-m-title {
+			position: relative;
+			left: -24px;
+			margin: 0 0 2px;
+			text-transform: uppercase;
+			transition: left $transition-timing;
+		}
+
+		.qodef-m-subtitle {
+			color: $heading-color;
+			opacity: 1;
+		}
+
+		&:hover {
+
+			.qodef-m-title {
+				left: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,38 @@
+.qodef-product-layout--gallery  {
+	#qodef-page-content > .qodef-grid-inner {
+		padding: 0 60px;
+
+		@include qodefScreenSize680 {
+			padding: 0 7%;
+		}
+	}
+
+	div#qodef-woo-page.qodef--single {
+		.woocommerce-product-gallery.qodef-col-num--2 {
+			.qodef-grid-inner {
+				display: flex;
+				align-items: flex-start;
+				flex-wrap: wrap;
+				margin: 0 -11px;
+			}
+
+			.woocommerce-product-gallery__image {
+				width: 50%;
+				padding: 0 11px;
+				margin: 0 0 22px;
+
+				@include qodefScreenSize680 {
+					width: 100%;
+				}
+			}
+		}
+
+		.entry-summary {
+			width: 39%;
+
+			@include qodefScreenSize1024 {
+				width: 100%;
+			}
+		}
+	}
+}

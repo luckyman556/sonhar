@@ -1,0 +1,50 @@
+$max-width-content: 48.5%;
+
+.qodef-blog {
+    &--wide {
+        .qodef--single {
+            > .qodef-blog-item {
+                .qodef-e-top-holder {
+                    text-align: center;
+                    margin-bottom: 63px;
+
+                    .qodef-e-title {
+                        margin-top: 9px;
+                    }
+                }
+            }
+
+            .qodef-e-top-holder,
+            .qodef-e-text,
+            .qodef-e-bottom-holder,
+            #qodef-author-info,
+            #qodef-related-posts,
+            #qodef-page-comments {
+                max-width: 48%;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+
+                @include qodefScreenSize1440 {
+                    max-width: 65%;
+                }
+
+                @include qodefScreenSize1280 {
+                    max-width: 75%;
+                }
+
+                @include qodefScreenSize768 {
+                    max-width: 100%;
+                }
+            }
+
+            #qodef-related-posts {
+                .qodef-e-top-holder,
+                .qodef-e-text,
+                .qodef-e-bottom-holder {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

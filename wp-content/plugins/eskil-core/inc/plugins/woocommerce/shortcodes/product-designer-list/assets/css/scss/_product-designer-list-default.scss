@@ -1,0 +1,86 @@
+/* ==========================================================================
+   Product Designer List styles
+   ========================================================================== */
+
+.qodef-woo-product-designer-list {
+
+	.qodef-designer-name {
+		margin: 10px 0;
+	}
+}
+
+//Single Designer Styles
+.tax-product_designer {
+
+	#qodef-page-inner {
+		padding: 0;
+	}
+
+	.qodef-designer-content {
+
+		.qodef-designer-top-holder {
+
+			.qodef-designer-top-content {
+				max-width: 640px;
+				margin: 0 auto;
+			}
+		}
+
+		.qodef-designer-name {
+			margin-top: 45px;
+			margin-bottom: 0;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		.qodef-designer-image {
+			margin-top: 64px;
+		}
+
+		.qodef-designer-label {
+			margin-top: 65px;
+			font-size: 20px;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+
+		.qodef-designer-tagline {
+			margin-top: 71px;
+
+			> p {
+				margin: 0;
+				font-size: 21px;
+				line-height: 1.375em;
+			}
+		}
+
+		.qodef-designer-desc {
+			margin-top: 16px;
+
+			> p {
+				margin-top: 0;
+				margin-bottom: 22px;
+			}
+		}
+	}
+
+	.qodef-designer-related {
+		max-width: 960px;
+		margin: 82px auto 147px;
+
+		.qodef-woo-product-list {
+
+			> .qodef-grid-inner {
+				margin: 0 -22px;
+
+				> .qodef-grid-item {
+					padding: 0 22px; //same as inner margin
+				}
+			}
+
+			.qodef-woo-product-content {
+				margin-top: 23px;
+			}
+		}
+	}
+}

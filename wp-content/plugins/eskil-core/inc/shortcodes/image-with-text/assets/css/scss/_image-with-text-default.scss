@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Image With Text shortcode styles
+   ========================================================================== */
+
+.qodef-image-with-text {
+	@include qodefRelativeLayout();
+
+	.qodef-m-image {
+		@include qodefRelativeLayout();
+
+		a, img {
+			display: block;
+		}
+
+		a {
+			position: relative;
+
+			img {
+				transform: translateY(0);
+				transition: transform .3s ease-in-out;
+			}
+
+			&:hover {
+
+				img {
+					transform: translateY(-1%);
+				}
+			}
+		}
+	}
+
+	.qodef-m-content {
+		@include qodefRelativeLayout();
+	}
+
+	.qodef-m-title {
+		margin: 16px 0 0;
+
+		a {
+
+			&:hover {
+				color: #505050;
+			}
+		}
+	}
+
+	.qodef-m-text {
+		margin: 15px 0 0;
+	}
+
+	&.qodef-align--center {
+
+		.qodef-m-content {
+			text-align: center;
+		}
+	}
+
+	&.qodef-align--right {
+
+		.qodef-m-image img {
+			margin-left: auto;
+		}
+
+		.qodef-m-content {
+			text-align: right;
+		}
+	}
+
+	&.qodef-drop-shadow {
+
+		.qodef-m-image {
+
+			img {
+				box-shadow: $box-shadow;
+			}
+		}
+	}
+	
+	&.qodef-skin--light {
+		.qodef-m-title {
+			color: #fff;
+			
+			a {
+				color: currentColor;
+				
+				&:hover {
+					color: #e8e8e8;
+				}
+			}
+		}
+		
+		.qodef-m-text {
+			color: #fff;
+		}
+	}
+}

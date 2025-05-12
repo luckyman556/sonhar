@@ -1,0 +1,64 @@
+/* ==========================================================================
+   #Content bottom styles - begin
+   ========================================================================== */
+#qodef-content-bottom {
+	margin: 0 $side-padding;
+
+	@include qodefScreenSize1024 {
+		margin: 0 $side-padding-responsive;
+	}
+
+	&.qodef-content-bordered  {
+		border-top: 1px solid $border-color;
+	}
+}
+
+.qodef-content-bottom {
+	max-width: 666px;
+	margin: 142px auto 130px;
+	text-align: center;
+
+
+	.qodef-cb-form {
+		position: relative;
+		margin: 55px auto 0;
+		max-width: 620px;
+
+		.wpcf7-email {
+			margin-bottom: 0;
+		}
+
+		.qodef-button {
+			position: absolute;
+			right: 13px;
+			top: 16px;
+
+			@include qodefScreenSize480 {
+				position: relative;
+				right: 0;
+				top: 0;
+			}
+		}
+	}
+
+	.qodef-cb-text {
+		text-transform: uppercase;
+		margin-top: 25px;
+
+		> a {
+			text-decoration: underline;
+		}
+	}
+
+	+ div.wpcf7-response-output {
+		margin: 0 auto 50px !important;
+		top: -104px;
+		position: relative;
+		text-align: center;
+		max-width: 665px;
+	}
+}
+
+/* ==========================================================================
+   #Content bottom styles - end
+   ========================================================================== */

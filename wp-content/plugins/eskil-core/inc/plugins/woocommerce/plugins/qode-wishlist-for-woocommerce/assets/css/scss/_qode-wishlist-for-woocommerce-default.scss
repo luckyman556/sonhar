@@ -1,0 +1,257 @@
+/* ==========================================================================
+   Qode WishList For WooCommerce - Add Wishlist Button styles - begin
+   ========================================================================== */
+
+@import '../../../../../../../../../../themes/eskil/inc/woocommerce/assets/css/scss/woo-mixins';
+
+.qwfw-add-to-wishlist-wrapper {
+
+	&.qodef-eskil-theme {
+
+		.qwfw-shortcode {
+			font-size: 13px;
+			font-weight: 600;
+			text-transform: uppercase;
+
+			.qwfw-m-icon {
+				width: var(--qwfw-atw-icon-size, 13px);
+			}
+
+			&:not(.button) {
+				display: inline-flex;
+				color: var(--qwfw-atw-color, $heading-color);
+				overflow: hidden;
+				transition: .3s ease .1s;
+
+				&.qwfw-type--icon-with-text {
+
+					.qwfw-m-icon {
+						display: inline-block;
+						position: absolute;
+						left: 0;
+						top: 50%;
+						transform: translate(-14px, -50%);
+						transition: transform .3s ease;
+					}
+
+					&:hover {
+						padding: 0 0 0 19px;
+						transition: .3s ease;
+
+						.qwfw-m-icon {
+							transform: translate(0, -50%);
+							transition: transform .3s ease .1s;
+						}
+					}
+
+					&.qwfw--added {
+						padding: 0 0 0 19px;
+						transition: .3s ease;
+
+						.qwfw-m-icon {
+							transform: translate(0, -50%);
+							transition: transform .3s ease .1s;
+						}
+					}
+				}
+
+				.qwfw-spinner-icon {
+					color: currentColor;
+				}
+
+				&:hover {
+					color: var(--qwfw-atw-hover-color, $heading-color);
+				}
+
+				&.qwfw--added {
+					color: var(--qwfw-atw-active-color, $heading-color);
+
+					&:hover {
+						color: var(--qwfw-atw-hover-color, $heading-color);
+					}
+				}
+			}
+		}
+
+		&.qwfw--loop {
+
+			&.qwfw-position--after-add-to-cart {
+				margin-top: 0;
+			}
+		}
+
+		> a {
+
+			&.woocommerce-LoopProduct-link {
+				display: none;
+			}
+		}
+	}
+}
+
+/* ==========================================================================
+   Qode WishList For WooCommerce - Wishlist Page styles - begin
+   ========================================================================== */
+
+.qwfw-wishlist-table {
+
+	&.qodef-eskil-theme {
+
+		.qwfw-m-items.shop_table {
+			@include qodefWooTableStyle();
+			font-size: 100%;
+			border: 1px solid $border-color;
+
+			.qwfw-m-items-heading {
+				background-color: var(--qwfw-wt-heading-bg-color, transparent);
+				border-bottom: 1px solid var(--qwfw-wt-border-color, $border-color);
+			}
+
+			.qwfw-m-items-content-row {
+				background-color: var(--qwfw-wt-content-bg-color, transparent);
+				border-bottom: 1px solid var(--qwfw-wt-border-color, $border-color);
+			}
+
+			thead th {
+				letter-spacing: 0;
+			}
+
+			thead {
+				th {
+					font-size: 20px;
+					padding-top: 6px;
+					padding-bottom: 6px;
+				}
+			}
+
+			tbody {
+				.product-price,
+				.product-stock-status {
+					font-size: 14px;
+					font-weight: 500;
+				}
+
+				.product-remove {
+					a {
+						font-size: 31px;
+						font-weight: 300;
+					}
+				}
+
+				.product-stock-status {
+					font-size: 14px;
+					text-transform: uppercase;
+					min-width: 150px;
+
+					span {
+						color: $heading-color;
+					}
+
+					@include qodefScreenSize1024 {
+						display: none;
+					}
+				}
+
+				.product-add-to-cart {
+					padding-right: 43px;
+					text-align: right;
+					width: 261px;
+					min-width: 235px;
+
+					.button,
+					.add_to_cart,
+					.qwfw-e-add-to-cart {
+						@include qodefButtonDefaultStyle();
+						@include qodefButtonFilledColor();
+						display: inline-flex !important;
+						font-family: $text-font;
+						font-size: 18px;
+						font-weight: 400;
+						padding: 8px 18px;
+
+						&:before {
+							content: url("../img/add_to_cart_light.svg");
+							position: relative;
+							width: 0;
+							overflow: hidden;
+							text-align: left;
+							line-height: 1em;
+							transition: width .2s ease-in-out;
+							margin-right: 2px;
+						}
+
+						&:hover:before {
+							width: 18px;
+							transition: width .2s ease-in-out;
+						}
+					}
+				}
+
+				tr td {
+					padding-top: 20px;
+					padding-bottom: 20px;
+
+					&.product-name {
+						padding-right: 9.5%;
+
+						@include qodefScreenSize768 {
+							padding-right: 0;
+						}
+					}
+
+					&.product-thumbnail {
+						padding-left: 0;
+					}
+
+					&.product-remove {
+						text-align: center;
+					}
+				}
+			}
+
+			tr {
+				@include qodefScreenSize680 {
+					display: flex;
+					flex-direction: column;
+					position: relative;
+				}
+
+				th {
+					background: transparent !important;
+
+					&.product-remove {
+						width: auto !important;
+					}
+
+					&.product-stock-status {
+						@include qodefScreenSize1024 {
+							display: none;
+						}
+					}
+				}
+
+				td {
+					background: transparent !important;
+					color: $text-color !important;
+					border-color: transparent !important;
+				}
+			}
+
+			th,
+			td {
+
+				&.product-thumbnail {
+					width: 112px;
+				}
+
+				&.product-name {
+					padding-left: 44px;
+
+					a {
+						padding-right: 0;
+					}
+				}
+			}
+		}
+	}
+}

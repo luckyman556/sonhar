@@ -1,0 +1,70 @@
+/* ==========================================================================
+   YITH Countdown counter default styles
+   ========================================================================== */
+
+div.ywpc-countdown {
+    margin: 36px 0 -11px;
+
+    .ywpc {
+        &-days,
+        &-hours,
+        &-minutes,
+        &-seconds {
+            margin: 0 6px 0 0 !important;
+            padding: 0;
+            vertical-align: middle;
+            display: inline-flex !important;
+            flex-direction: column;
+            background-color: $additional-background-color;
+            font-family: $text-font;
+            width: 60px !important;
+
+            @include qodefScreenSize680 {
+                width: 75px;
+            }
+
+            @include qodefScreenSize480 {
+                width: 65px;
+            }
+
+            > div.ywpc-label {
+                font-size: 13px;
+                color: $additional-text-color;
+                text-align: center;
+                font-family: $text-font;
+                padding-bottom: 13px;
+                letter-spacing: 0;
+            }
+        }
+
+        &-hours,
+        &-minutes,
+        &-seconds {
+            position: relative;
+        }
+
+        &-amount {
+            line-height: 1em;
+            background-color: transparent !important;
+            height: auto !important;
+            width: auto !important;
+            margin: 0 !important;
+            text-align: center;
+            padding: 18px 5px 1px;
+
+            > span {
+                background-color: transparent !important;
+                border: none !important;
+                height: auto !important;
+                line-height: 1em !important;
+                margin: 0 !important;
+                vertical-align: middle;
+                width: auto !important;
+                color: var(--qode-main-color) !important;
+                font-size: 13px !important;
+                font-weight: 400 !important;
+                font-family: $text-font;
+            }
+        }
+    }
+}

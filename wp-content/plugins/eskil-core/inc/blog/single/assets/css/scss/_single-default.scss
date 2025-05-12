@@ -1,0 +1,21 @@
+/* ==========================================================================
+   Blog Single with specific layout styles
+   ========================================================================== */
+
+body[class*="qodef-blog"] {
+
+    #qodef-page-content {
+
+        #qodef-single-post-navigation {
+            display: block;
+        }
+
+        .qodef-author-info {
+            display: block;
+        }
+
+        #qodef-page-comments {
+            display: block;
+        }
+    }
+}

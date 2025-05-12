@@ -1,0 +1,124 @@
+/* ==========================================================================
+   Testimonials list shortcode styles
+   ========================================================================== */
+
+.qodef-testimonials-list {
+
+	&.qodef-col-num--1 {
+
+		.qodef-e-inner {
+			max-width: 560px;
+			margin: auto;
+		}
+	}
+
+	.qodef-e-media-image {
+		line-height: 0;
+		margin-bottom: 25px;
+
+		img {
+			width: auto;
+		}
+	}
+
+	.qodef-e-title {
+		margin: 0 0 25px;
+	}
+
+	.qodef-e-text {
+		margin: 0 0 16px;
+	}
+
+	.qodef-e-author {
+		margin: 0;
+		text-transform: uppercase;
+	}
+
+	.qodef-e-content {
+		text-align: center;
+	}
+
+	.swiper-pagination-bullets {
+		text-align: left;
+		bottom: 0 !important;
+
+		.swiper-pagination-bullet {
+
+			&:before {
+				background-color: var(--qode-main-color);
+			}
+		}
+	}
+
+	&.qodef-skin--light {
+
+		.qodef-e-title,
+		.qodef-e-text,
+		.qodef-e-author {
+			color: #fff;
+		}
+
+		.swiper-button-prev,
+		.swiper-button-next {
+			color: #fff;
+			border-radius: 20px;
+			transition: all $transition-timing;
+
+			.qodef-svg--slider-arrow-left,
+			.qodef-svg--slider-arrow-right {
+				stroke: #fff;
+			}
+
+			&:hover {
+				color: #000;
+				background-color: white;
+				border-radius: 4px;
+			}
+		}
+
+		.swiper-pagination-bullet {
+
+			&:before {
+				background-color: #fff;
+			}
+		}
+	}
+
+	@include qodefScreenSize680 {
+		.swiper-button-prev,
+		.swiper-button-next {
+			display: none;
+		}
+	}
+
+	&.swiper-container-fade.qodef-col-num--1 {
+
+		.swiper-slide {
+			transition: 0s ease;
+			opacity: 1 !important;
+			z-index: 0;
+			overflow: hidden;
+
+			.qodef-e-text {
+				animation: qode-side-text-out .6s cubic-bezier(.46, .03, .52, .96) both .1s;
+			}
+
+			.qodef-e-author {
+				animation: qode-side-text-out .6s cubic-bezier(.46, .03, .52, .96) both .15s;
+			}
+
+			&.swiper-slide-active {
+				opacity: 1 !important;
+				z-index: 1;
+
+				.qodef-e-text {
+					animation: qode-side-text-in .6s cubic-bezier(.46, .03, .52, .96) both .5s;
+				}
+
+				.qodef-e-author {
+					animation: qode-side-text-in .6s cubic-bezier(.46, .03, .52, .96) both .55s;
+				}
+			}
+		}
+	}
+}

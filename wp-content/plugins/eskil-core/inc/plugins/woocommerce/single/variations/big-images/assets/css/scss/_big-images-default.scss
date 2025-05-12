@@ -1,0 +1,30 @@
+div#qodef-woo-page.qodef--single {
+	.qodef-product-layout--big_images & {
+		.qodef-gutter--normal {
+			.woocommerce-product-gallery__image {
+				padding: 0 15px;
+				margin-bottom: 10px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.entry-summary {
+			padding-left: 91px;
+
+			@include qodefScreenSize1024 {
+				padding-left: 20px;
+			}
+
+			.qodef-woo-product-title {
+				padding-right: 10%;
+
+				@include qodefScreenSize768 {
+					padding-right: 0;
+				}
+			}
+		}
+	}
+}

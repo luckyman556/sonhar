@@ -1,0 +1,45 @@
+/* ==========================================================================
+   Info Section Background Text shortcode styles
+   ========================================================================== */
+.qodef-custom-info-section {
+
+	&.qodef-layout--default {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 84px 90px 80px;
+
+		@include qodefScreenSize1024 {
+			padding: 84px 54px 80px;
+		}
+
+		@include qodefScreenSize768 {
+			padding: 84px 28px 80px;
+		}
+
+		.qodef-m-tagline {
+			font-size: 14px;
+			text-transform: uppercase;
+			letter-spacing: .02em;
+			margin-bottom: 15px;
+			display: block;
+		}
+
+		.qodef-m-info {
+			position: relative;
+			z-index: 2;
+		}
+
+		.qodef-m-title {
+			margin: 0 0 18px;
+		}
+
+		&.qodef-full-height {
+			height: 100vh;
+		}
+	}
+}
+
+/* ==========================================================================
+   Info Section Background Text shortcode styles
+   ========================================================================== */
