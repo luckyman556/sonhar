@@ -16,7 +16,7 @@ do_action('woocommerce_before_add_to_cart_form'); ?>
 	</div>
 	<?php 
 		if ($sku) {
-			echo '<p>SKU:<span>' . esc_html($sku) . '</span></p>';
+			echo '<p class="sku">SKU:<span>' . esc_html($sku) . '</span></p>';
 		} 
 	?>
 	<p class="description"><?php echo $product->get_short_description(); ?></p>
@@ -52,111 +52,381 @@ do_action('woocommerce_before_add_to_cart_form'); ?>
 	<hr class="horisontal-line" />
 	<p class="step-name"><span class="bold-step">Krok 2.</span> Wybierz tkaninę i kolor</p>
 	<div class="step-two-container ">
-		<p>Tkaniny Centaur i Toronto</p>
+		<p class="group-of-fabric">Tkaniny Centaur i Toronto</p>
 		<div class="fabricContainer">
 			<div class="fabric">
-				<img src="http://localhost/sonhar/wp-content/uploads/2025/04/Elli_1.png" alt="Elli">
-				<svg class="zoom-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<rect width="16" height="16" fill="white" fill-opacity="0.5" />
-					<g clip-path="url(#clip0_239_1009)">
-						<path d="M9.25488 9.93694L11.3495 12.0315H9.72171V13H12.9998V9.72196H12.0313V11.3497L9.9367 9.25513L9.25488 9.93694Z" fill="black" />
-						<path d="M12.0313 6.27805H12.9998V3H9.72171V3.96847H11.3495L9.25488 6.06306L9.9367 6.74693L12.0313 4.65029V6.27805Z" fill="black" />
-						<path d="M3.96847 9.72196H3V13H6.27805V12.0315H4.65029L6.74693 9.93694L6.06306 9.25513L3.96847 11.3497V9.72196Z" fill="black" />
-						<path d="M3 3V6.27805H3.96847V4.65029L6.06306 6.74693L6.74693 6.06306L4.65029 3.96847H6.27805V3H3Z" fill="black" />
-					</g>
-					<defs>
-						<clipPath id="clip0_239_1009">
-							<rect width="10" height="10" fill="white" transform="translate(3 3)" />
-						</clipPath>
-					</defs>
-				</svg>
+				<div class="fabric-inner-container">
+					<img src="http://localhost/sonhar/wp-content/uploads/2025/04/Elli_1.png" alt="Elli">
+					<svg class="zoom-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="16" height="16" fill="white" fill-opacity="0.5" />
+						<g clip-path="url(#clip0_239_1009)">
+							<path d="M9.25488 9.93694L11.3495 12.0315H9.72171V13H12.9998V9.72196H12.0313V11.3497L9.9367 9.25513L9.25488 9.93694Z" fill="black" />
+							<path d="M12.0313 6.27805H12.9998V3H9.72171V3.96847H11.3495L9.25488 6.06306L9.9367 6.74693L12.0313 4.65029V6.27805Z" fill="black" />
+							<path d="M3.96847 9.72196H3V13H6.27805V12.0315H4.65029L6.74693 9.93694L6.06306 9.25513L3.96847 11.3497V9.72196Z" fill="black" />
+							<path d="M3 3V6.27805H3.96847V4.65029L6.06306 6.74693L6.74693 6.06306L4.65029 3.96847H6.27805V3H3Z" fill="black" />
+						</g>
+						<defs>
+							<clipPath id="clip0_239_1009">
+								<rect width="10" height="10" fill="white" transform="translate(3 3)" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				
 			</div>
 
 			<div class="fabric">
-				<img class="fabric-img" src="./" alt="fabric photo">
+				<div class="fabric-inner-container">
+					<img src="http://localhost/sonhar/wp-content/uploads/2025/04/Elli_1.png" alt="Elli">
+					<svg class="zoom-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="16" height="16" fill="white" fill-opacity="0.5" />
+						<g clip-path="url(#clip0_239_1009)">
+							<path d="M9.25488 9.93694L11.3495 12.0315H9.72171V13H12.9998V9.72196H12.0313V11.3497L9.9367 9.25513L9.25488 9.93694Z" fill="black" />
+							<path d="M12.0313 6.27805H12.9998V3H9.72171V3.96847H11.3495L9.25488 6.06306L9.9367 6.74693L12.0313 4.65029V6.27805Z" fill="black" />
+							<path d="M3.96847 9.72196H3V13H6.27805V12.0315H4.65029L6.74693 9.93694L6.06306 9.25513L3.96847 11.3497V9.72196Z" fill="black" />
+							<path d="M3 3V6.27805H3.96847V4.65029L6.06306 6.74693L6.74693 6.06306L4.65029 3.96847H6.27805V3H3Z" fill="black" />
+						</g>
+						<defs>
+							<clipPath id="clip0_239_1009">
+								<rect width="10" height="10" fill="white" transform="translate(3 3)" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				
 			</div>
 			<div class="fabric">
-				<img class="fabric-img" src="#" alt="fabric photo">
+				<div class="fabric-inner-container">
+					<img src="http://localhost/sonhar/wp-content/uploads/2025/04/Elli_1.png" alt="Elli">
+					<svg class="zoom-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="16" height="16" fill="white" fill-opacity="0.5" />
+						<g clip-path="url(#clip0_239_1009)">
+							<path d="M9.25488 9.93694L11.3495 12.0315H9.72171V13H12.9998V9.72196H12.0313V11.3497L9.9367 9.25513L9.25488 9.93694Z" fill="black" />
+							<path d="M12.0313 6.27805H12.9998V3H9.72171V3.96847H11.3495L9.25488 6.06306L9.9367 6.74693L12.0313 4.65029V6.27805Z" fill="black" />
+							<path d="M3.96847 9.72196H3V13H6.27805V12.0315H4.65029L6.74693 9.93694L6.06306 9.25513L3.96847 11.3497V9.72196Z" fill="black" />
+							<path d="M3 3V6.27805H3.96847V4.65029L6.06306 6.74693L6.74693 6.06306L4.65029 3.96847H6.27805V3H3Z" fill="black" />
+						</g>
+						<defs>
+							<clipPath id="clip0_239_1009">
+								<rect width="10" height="10" fill="white" transform="translate(3 3)" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				
 			</div>
 			<div class="fabric">
-				<img class="fabric-img" src="#" alt="fabric photo">
+				<div class="fabric-inner-container">
+					<img src="http://localhost/sonhar/wp-content/uploads/2025/04/Elli_1.png" alt="Elli">
+					<svg class="zoom-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="16" height="16" fill="white" fill-opacity="0.5" />
+						<g clip-path="url(#clip0_239_1009)">
+							<path d="M9.25488 9.93694L11.3495 12.0315H9.72171V13H12.9998V9.72196H12.0313V11.3497L9.9367 9.25513L9.25488 9.93694Z" fill="black" />
+							<path d="M12.0313 6.27805H12.9998V3H9.72171V3.96847H11.3495L9.25488 6.06306L9.9367 6.74693L12.0313 4.65029V6.27805Z" fill="black" />
+							<path d="M3.96847 9.72196H3V13H6.27805V12.0315H4.65029L6.74693 9.93694L6.06306 9.25513L3.96847 11.3497V9.72196Z" fill="black" />
+							<path d="M3 3V6.27805H3.96847V4.65029L6.06306 6.74693L6.74693 6.06306L4.65029 3.96847H6.27805V3H3Z" fill="black" />
+						</g>
+						<defs>
+							<clipPath id="clip0_239_1009">
+								<rect width="10" height="10" fill="white" transform="translate(3 3)" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				
 			</div>
 			<div class="fabric">
-				<img class="fabric-img" src="#" alt="fabric photo">
+				<div class="fabric-inner-container">
+					<img src="http://localhost/sonhar/wp-content/uploads/2025/04/Elli_1.png" alt="Elli">
+					<svg class="zoom-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="16" height="16" fill="white" fill-opacity="0.5" />
+						<g clip-path="url(#clip0_239_1009)">
+							<path d="M9.25488 9.93694L11.3495 12.0315H9.72171V13H12.9998V9.72196H12.0313V11.3497L9.9367 9.25513L9.25488 9.93694Z" fill="black" />
+							<path d="M12.0313 6.27805H12.9998V3H9.72171V3.96847H11.3495L9.25488 6.06306L9.9367 6.74693L12.0313 4.65029V6.27805Z" fill="black" />
+							<path d="M3.96847 9.72196H3V13H6.27805V12.0315H4.65029L6.74693 9.93694L6.06306 9.25513L3.96847 11.3497V9.72196Z" fill="black" />
+							<path d="M3 3V6.27805H3.96847V4.65029L6.06306 6.74693L6.74693 6.06306L4.65029 3.96847H6.27805V3H3Z" fill="black" />
+						</g>
+						<defs>
+							<clipPath id="clip0_239_1009">
+								<rect width="10" height="10" fill="white" transform="translate(3 3)" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				
 			</div>
 			<div class="fabric">
-				<img class="fabric-img" src="#" alt="fabric photo">
+				<div class="fabric-inner-container">
+					<img src="http://localhost/sonhar/wp-content/uploads/2025/04/Elli_1.png" alt="Elli">
+					<svg class="zoom-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="16" height="16" fill="white" fill-opacity="0.5" />
+						<g clip-path="url(#clip0_239_1009)">
+							<path d="M9.25488 9.93694L11.3495 12.0315H9.72171V13H12.9998V9.72196H12.0313V11.3497L9.9367 9.25513L9.25488 9.93694Z" fill="black" />
+							<path d="M12.0313 6.27805H12.9998V3H9.72171V3.96847H11.3495L9.25488 6.06306L9.9367 6.74693L12.0313 4.65029V6.27805Z" fill="black" />
+							<path d="M3.96847 9.72196H3V13H6.27805V12.0315H4.65029L6.74693 9.93694L6.06306 9.25513L3.96847 11.3497V9.72196Z" fill="black" />
+							<path d="M3 3V6.27805H3.96847V4.65029L6.06306 6.74693L6.74693 6.06306L4.65029 3.96847H6.27805V3H3Z" fill="black" />
+						</g>
+						<defs>
+							<clipPath id="clip0_239_1009">
+								<rect width="10" height="10" fill="white" transform="translate(3 3)" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				
 			</div>
 			<div class="fabric">
-				<img class="fabric-img" src="#" alt="fabric photo">
+				<div class="fabric-inner-container">
+					<img src="http://localhost/sonhar/wp-content/uploads/2025/04/Elli_1.png" alt="Elli">
+					<svg class="zoom-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="16" height="16" fill="white" fill-opacity="0.5" />
+						<g clip-path="url(#clip0_239_1009)">
+							<path d="M9.25488 9.93694L11.3495 12.0315H9.72171V13H12.9998V9.72196H12.0313V11.3497L9.9367 9.25513L9.25488 9.93694Z" fill="black" />
+							<path d="M12.0313 6.27805H12.9998V3H9.72171V3.96847H11.3495L9.25488 6.06306L9.9367 6.74693L12.0313 4.65029V6.27805Z" fill="black" />
+							<path d="M3.96847 9.72196H3V13H6.27805V12.0315H4.65029L6.74693 9.93694L6.06306 9.25513L3.96847 11.3497V9.72196Z" fill="black" />
+							<path d="M3 3V6.27805H3.96847V4.65029L6.06306 6.74693L6.74693 6.06306L4.65029 3.96847H6.27805V3H3Z" fill="black" />
+						</g>
+						<defs>
+							<clipPath id="clip0_239_1009">
+								<rect width="10" height="10" fill="white" transform="translate(3 3)" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				
 			</div>
-			<div class="fabric">
-
-			</div>
+			
 		</div>
-		<p>Tkanina Enjoy me</p>
+		<p class="group-of-fabric">Tkanina Enjoy me</p>
 		<div class="fabricContainer">
-			<div class="fabric">
-				<img class="fabric-img" src="#" alt="fabric photo">
+		<div class="fabric">
+				<div class="fabric-inner-container">
+					<img src="http://localhost/sonhar/wp-content/uploads/2025/04/Elli_1.png" alt="Elli">
+					<svg class="zoom-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="16" height="16" fill="white" fill-opacity="0.5" />
+						<g clip-path="url(#clip0_239_1009)">
+							<path d="M9.25488 9.93694L11.3495 12.0315H9.72171V13H12.9998V9.72196H12.0313V11.3497L9.9367 9.25513L9.25488 9.93694Z" fill="black" />
+							<path d="M12.0313 6.27805H12.9998V3H9.72171V3.96847H11.3495L9.25488 6.06306L9.9367 6.74693L12.0313 4.65029V6.27805Z" fill="black" />
+							<path d="M3.96847 9.72196H3V13H6.27805V12.0315H4.65029L6.74693 9.93694L6.06306 9.25513L3.96847 11.3497V9.72196Z" fill="black" />
+							<path d="M3 3V6.27805H3.96847V4.65029L6.06306 6.74693L6.74693 6.06306L4.65029 3.96847H6.27805V3H3Z" fill="black" />
+						</g>
+						<defs>
+							<clipPath id="clip0_239_1009">
+								<rect width="10" height="10" fill="white" transform="translate(3 3)" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				
 			</div>
 			<div class="fabric">
-				<img class="fabric-img" src="#" alt="fabric photo">
+				<div class="fabric-inner-container">
+					<img src="http://localhost/sonhar/wp-content/uploads/2025/04/Elli_1.png" alt="Elli">
+					<svg class="zoom-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="16" height="16" fill="white" fill-opacity="0.5" />
+						<g clip-path="url(#clip0_239_1009)">
+							<path d="M9.25488 9.93694L11.3495 12.0315H9.72171V13H12.9998V9.72196H12.0313V11.3497L9.9367 9.25513L9.25488 9.93694Z" fill="black" />
+							<path d="M12.0313 6.27805H12.9998V3H9.72171V3.96847H11.3495L9.25488 6.06306L9.9367 6.74693L12.0313 4.65029V6.27805Z" fill="black" />
+							<path d="M3.96847 9.72196H3V13H6.27805V12.0315H4.65029L6.74693 9.93694L6.06306 9.25513L3.96847 11.3497V9.72196Z" fill="black" />
+							<path d="M3 3V6.27805H3.96847V4.65029L6.06306 6.74693L6.74693 6.06306L4.65029 3.96847H6.27805V3H3Z" fill="black" />
+						</g>
+						<defs>
+							<clipPath id="clip0_239_1009">
+								<rect width="10" height="10" fill="white" transform="translate(3 3)" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				
 			</div>
 			<div class="fabric">
-				<img class="fabric-img" src="#" alt="fabric photo">
+				<div class="fabric-inner-container">
+					<img src="http://localhost/sonhar/wp-content/uploads/2025/04/Elli_1.png" alt="Elli">
+					<svg class="zoom-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="16" height="16" fill="white" fill-opacity="0.5" />
+						<g clip-path="url(#clip0_239_1009)">
+							<path d="M9.25488 9.93694L11.3495 12.0315H9.72171V13H12.9998V9.72196H12.0313V11.3497L9.9367 9.25513L9.25488 9.93694Z" fill="black" />
+							<path d="M12.0313 6.27805H12.9998V3H9.72171V3.96847H11.3495L9.25488 6.06306L9.9367 6.74693L12.0313 4.65029V6.27805Z" fill="black" />
+							<path d="M3.96847 9.72196H3V13H6.27805V12.0315H4.65029L6.74693 9.93694L6.06306 9.25513L3.96847 11.3497V9.72196Z" fill="black" />
+							<path d="M3 3V6.27805H3.96847V4.65029L6.06306 6.74693L6.74693 6.06306L4.65029 3.96847H6.27805V3H3Z" fill="black" />
+						</g>
+						<defs>
+							<clipPath id="clip0_239_1009">
+								<rect width="10" height="10" fill="white" transform="translate(3 3)" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				
 			</div>
 			<div class="fabric">
-				<img class="fabric-img" src="#" alt="fabric photo">
+				<div class="fabric-inner-container">
+					<img src="http://localhost/sonhar/wp-content/uploads/2025/04/Elli_1.png" alt="Elli">
+					<svg class="zoom-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="16" height="16" fill="white" fill-opacity="0.5" />
+						<g clip-path="url(#clip0_239_1009)">
+							<path d="M9.25488 9.93694L11.3495 12.0315H9.72171V13H12.9998V9.72196H12.0313V11.3497L9.9367 9.25513L9.25488 9.93694Z" fill="black" />
+							<path d="M12.0313 6.27805H12.9998V3H9.72171V3.96847H11.3495L9.25488 6.06306L9.9367 6.74693L12.0313 4.65029V6.27805Z" fill="black" />
+							<path d="M3.96847 9.72196H3V13H6.27805V12.0315H4.65029L6.74693 9.93694L6.06306 9.25513L3.96847 11.3497V9.72196Z" fill="black" />
+							<path d="M3 3V6.27805H3.96847V4.65029L6.06306 6.74693L6.74693 6.06306L4.65029 3.96847H6.27805V3H3Z" fill="black" />
+						</g>
+						<defs>
+							<clipPath id="clip0_239_1009">
+								<rect width="10" height="10" fill="white" transform="translate(3 3)" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				
 			</div>
 			<div class="fabric">
-				<img class="fabric-img" src="#" alt="fabric photo">
+				<div class="fabric-inner-container">
+					<img src="http://localhost/sonhar/wp-content/uploads/2025/04/Elli_1.png" alt="Elli">
+					<svg class="zoom-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="16" height="16" fill="white" fill-opacity="0.5" />
+						<g clip-path="url(#clip0_239_1009)">
+							<path d="M9.25488 9.93694L11.3495 12.0315H9.72171V13H12.9998V9.72196H12.0313V11.3497L9.9367 9.25513L9.25488 9.93694Z" fill="black" />
+							<path d="M12.0313 6.27805H12.9998V3H9.72171V3.96847H11.3495L9.25488 6.06306L9.9367 6.74693L12.0313 4.65029V6.27805Z" fill="black" />
+							<path d="M3.96847 9.72196H3V13H6.27805V12.0315H4.65029L6.74693 9.93694L6.06306 9.25513L3.96847 11.3497V9.72196Z" fill="black" />
+							<path d="M3 3V6.27805H3.96847V4.65029L6.06306 6.74693L6.74693 6.06306L4.65029 3.96847H6.27805V3H3Z" fill="black" />
+						</g>
+						<defs>
+							<clipPath id="clip0_239_1009">
+								<rect width="10" height="10" fill="white" transform="translate(3 3)" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				
 			</div>
 			<div class="fabric">
-				<img class="fabric-img" src="#" alt="fabric photo">
+				<div class="fabric-inner-container">
+					<img src="http://localhost/sonhar/wp-content/uploads/2025/04/Elli_1.png" alt="Elli">
+					<svg class="zoom-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="16" height="16" fill="white" fill-opacity="0.5" />
+						<g clip-path="url(#clip0_239_1009)">
+							<path d="M9.25488 9.93694L11.3495 12.0315H9.72171V13H12.9998V9.72196H12.0313V11.3497L9.9367 9.25513L9.25488 9.93694Z" fill="black" />
+							<path d="M12.0313 6.27805H12.9998V3H9.72171V3.96847H11.3495L9.25488 6.06306L9.9367 6.74693L12.0313 4.65029V6.27805Z" fill="black" />
+							<path d="M3.96847 9.72196H3V13H6.27805V12.0315H4.65029L6.74693 9.93694L6.06306 9.25513L3.96847 11.3497V9.72196Z" fill="black" />
+							<path d="M3 3V6.27805H3.96847V4.65029L6.06306 6.74693L6.74693 6.06306L4.65029 3.96847H6.27805V3H3Z" fill="black" />
+						</g>
+						<defs>
+							<clipPath id="clip0_239_1009">
+								<rect width="10" height="10" fill="white" transform="translate(3 3)" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				
 			</div>
 			<div class="fabric">
-				<img class="fabric-img" src="#" alt="fabric photo">
+				<div class="fabric-inner-container">
+					<img src="http://localhost/sonhar/wp-content/uploads/2025/04/Elli_1.png" alt="Elli">
+					<svg class="zoom-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="16" height="16" fill="white" fill-opacity="0.5" />
+						<g clip-path="url(#clip0_239_1009)">
+							<path d="M9.25488 9.93694L11.3495 12.0315H9.72171V13H12.9998V9.72196H12.0313V11.3497L9.9367 9.25513L9.25488 9.93694Z" fill="black" />
+							<path d="M12.0313 6.27805H12.9998V3H9.72171V3.96847H11.3495L9.25488 6.06306L9.9367 6.74693L12.0313 4.65029V6.27805Z" fill="black" />
+							<path d="M3.96847 9.72196H3V13H6.27805V12.0315H4.65029L6.74693 9.93694L6.06306 9.25513L3.96847 11.3497V9.72196Z" fill="black" />
+							<path d="M3 3V6.27805H3.96847V4.65029L6.06306 6.74693L6.74693 6.06306L4.65029 3.96847H6.27805V3H3Z" fill="black" />
+						</g>
+						<defs>
+							<clipPath id="clip0_239_1009">
+								<rect width="10" height="10" fill="white" transform="translate(3 3)" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				
 			</div>
 			<div class="fabric">
-				<img class="fabric-img" src="#" alt="fabric photo">
+				<div class="fabric-inner-container">
+					<img src="http://localhost/sonhar/wp-content/uploads/2025/04/Elli_1.png" alt="Elli">
+					<svg class="zoom-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="16" height="16" fill="white" fill-opacity="0.5" />
+						<g clip-path="url(#clip0_239_1009)">
+							<path d="M9.25488 9.93694L11.3495 12.0315H9.72171V13H12.9998V9.72196H12.0313V11.3497L9.9367 9.25513L9.25488 9.93694Z" fill="black" />
+							<path d="M12.0313 6.27805H12.9998V3H9.72171V3.96847H11.3495L9.25488 6.06306L9.9367 6.74693L12.0313 4.65029V6.27805Z" fill="black" />
+							<path d="M3.96847 9.72196H3V13H6.27805V12.0315H4.65029L6.74693 9.93694L6.06306 9.25513L3.96847 11.3497V9.72196Z" fill="black" />
+							<path d="M3 3V6.27805H3.96847V4.65029L6.06306 6.74693L6.74693 6.06306L4.65029 3.96847H6.27805V3H3Z" fill="black" />
+						</g>
+						<defs>
+							<clipPath id="clip0_239_1009">
+								<rect width="10" height="10" fill="white" transform="translate(3 3)" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				
 			</div>
-			<div class="fabric">
-				<img class="fabric-img" src="#" alt="fabric photo">
-			</div>
+			
 		</div>
 	</div>
 	<hr class="horisontal-line" />
 	<p class="step-name"><span class="bold-step">Krok 3.</span> Wybierz kolor nóżek</p>
 	<div class="step-three-container ">
 		<div class="fabricContainer">
-			<div class="fabric">
-				<img class="fabric-img" src="#" alt="fabric photo">
-
+		<div class="fabric">
+				<div class="fabric-inner-container">
+					<img src="http://localhost/sonhar/wp-content/uploads/2025/04/Elli_1.png" alt="Elli">
+					<svg class="zoom-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="16" height="16" fill="white" fill-opacity="0.5" />
+						<g clip-path="url(#clip0_239_1009)">
+							<path d="M9.25488 9.93694L11.3495 12.0315H9.72171V13H12.9998V9.72196H12.0313V11.3497L9.9367 9.25513L9.25488 9.93694Z" fill="black" />
+							<path d="M12.0313 6.27805H12.9998V3H9.72171V3.96847H11.3495L9.25488 6.06306L9.9367 6.74693L12.0313 4.65029V6.27805Z" fill="black" />
+							<path d="M3.96847 9.72196H3V13H6.27805V12.0315H4.65029L6.74693 9.93694L6.06306 9.25513L3.96847 11.3497V9.72196Z" fill="black" />
+							<path d="M3 3V6.27805H3.96847V4.65029L6.06306 6.74693L6.74693 6.06306L4.65029 3.96847H6.27805V3H3Z" fill="black" />
+						</g>
+						<defs>
+							<clipPath id="clip0_239_1009">
+								<rect width="10" height="10" fill="white" transform="translate(3 3)" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				<p class="name-of-chair-leg">Orzechowy <span>#08765</span></p>
 			</div>
 			<div class="fabric">
-				<img class="fabric-img" src="#" alt="fabric photo">
+				<div class="fabric-inner-container">
+					<img src="http://localhost/sonhar/wp-content/uploads/2025/04/Elli_1.png" alt="Elli">
+					<svg class="zoom-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="16" height="16" fill="white" fill-opacity="0.5" />
+						<g clip-path="url(#clip0_239_1009)">
+							<path d="M9.25488 9.93694L11.3495 12.0315H9.72171V13H12.9998V9.72196H12.0313V11.3497L9.9367 9.25513L9.25488 9.93694Z" fill="black" />
+							<path d="M12.0313 6.27805H12.9998V3H9.72171V3.96847H11.3495L9.25488 6.06306L9.9367 6.74693L12.0313 4.65029V6.27805Z" fill="black" />
+							<path d="M3.96847 9.72196H3V13H6.27805V12.0315H4.65029L6.74693 9.93694L6.06306 9.25513L3.96847 11.3497V9.72196Z" fill="black" />
+							<path d="M3 3V6.27805H3.96847V4.65029L6.06306 6.74693L6.74693 6.06306L4.65029 3.96847H6.27805V3H3Z" fill="black" />
+						</g>
+						<defs>
+							<clipPath id="clip0_239_1009">
+								<rect width="10" height="10" fill="white" transform="translate(3 3)" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				<p class="name-of-chair-leg">Dąb naturalny <span> #07654</span></p>
 			</div>
 			<div class="fabric">
-				<img class="fabric-img" src="#" alt="fabric photo">
+				<div class="fabric-inner-container">
+					<img src="http://localhost/sonhar/wp-content/uploads/2025/04/Elli_1.png" alt="Elli">
+					<svg class="zoom-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect width="16" height="16" fill="white" fill-opacity="0.5" />
+						<g clip-path="url(#clip0_239_1009)">
+							<path d="M9.25488 9.93694L11.3495 12.0315H9.72171V13H12.9998V9.72196H12.0313V11.3497L9.9367 9.25513L9.25488 9.93694Z" fill="black" />
+							<path d="M12.0313 6.27805H12.9998V3H9.72171V3.96847H11.3495L9.25488 6.06306L9.9367 6.74693L12.0313 4.65029V6.27805Z" fill="black" />
+							<path d="M3.96847 9.72196H3V13H6.27805V12.0315H4.65029L6.74693 9.93694L6.06306 9.25513L3.96847 11.3497V9.72196Z" fill="black" />
+							<path d="M3 3V6.27805H3.96847V4.65029L6.06306 6.74693L6.74693 6.06306L4.65029 3.96847H6.27805V3H3Z" fill="black" />
+						</g>
+						<defs>
+							<clipPath id="clip0_239_1009">
+								<rect width="10" height="10" fill="white" transform="translate(3 3)" />
+							</clipPath>
+						</defs>
+					</svg>
+				</div>
+				<p class="name-of-chair-leg">Orzechowy <span>#08765</span></p>
 			</div>
-			<div class="fabric">
-				<img class="fabric-img" src="#" alt="fabric photo">
-			</div>
-			<div class="fabric">
-				<img class="fabric-img" src="#" alt="fabric photo">
-			</div>
-			<div class="fabric">
-				<img class="fabric-img" src="#" alt="fabric photo">
-			</div>
-			<div class="fabric">
-				<img class="fabric-img" src="#" alt="fabric photo">
-			</div>
-			<div class="fabric">
-				<img class="fabric-img" src="#" alt="fabric photo">
-			</div>
-			<div class="fabric">
-				<img class="fabric-img" src="#" alt="fabric photo">
-			</div>
+			
 		</div>
 	</div>
 	<div class="modal hidden">
@@ -166,8 +436,8 @@ do_action('woocommerce_before_add_to_cart_form'); ?>
 		<button class="next">&#8594;</button>
 	</div>
 
-
 	<button class="step-one-btn button-in-configurator">Podsumowując</button>
+	
 </div>
 
 <script>

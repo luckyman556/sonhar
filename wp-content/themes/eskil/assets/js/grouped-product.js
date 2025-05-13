@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const prevBtn = document.querySelector(".prev");
     const nextBtn = document.querySelector(".next");
 
-    const fabricBlocks = document.querySelectorAll(".fabric");
+    const fabricBlocks = document.querySelectorAll(".fabric-inner-container");
 
     let currentIndex = 0;
 
