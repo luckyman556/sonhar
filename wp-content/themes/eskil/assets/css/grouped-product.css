@@ -257,7 +257,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 523px;
     margin-top: 30px;
     border-bottom: 1px solid #d2d2d2;
   }
@@ -427,6 +426,23 @@
 
     .button-in-configurator {
       margin-right: auto;
+    }
+
+    .receipt {
+      width: 330px;
+    }
+
+    .receipt-button-container {
+      flex-direction: column;
+    }
+
+    .count-container {
+      flex-direction: column;
+    }
+
+    .plus-minus-btn-container {
+      margin-top: 15px;
+      margin-right: 0;
     }
   }
 }
