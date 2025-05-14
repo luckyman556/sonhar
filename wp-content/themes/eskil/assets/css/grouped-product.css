@@ -75,7 +75,6 @@
     font-size: 12px;
     line-height: 14px;
     font-weight: 400;
-    letter-spacing: 0.05em;
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.3s;
@@ -235,6 +234,162 @@
 
   button.next {
     right: 20px;
+  }
+
+  .receipt {
+    width: 525px;
+  }
+
+  .receipt hr.horisontal-line {
+    margin-top: 30px;
+  }
+
+  .receipt .sub-title {
+    margin: 23px 0 0 0;
+    letter-spacing: 0.05em;
+  }
+
+  .receipt .step-name {
+    margin-top: 27px;
+  }
+
+  .receipt-group-fabric {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 523px;
+    margin-top: 30px;
+    border-bottom: 1px solid #d2d2d2;
+  }
+
+  .receipt-bold-text {
+    margin: 0;
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+  }
+
+  .receipt .receipt-text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+  }
+
+  .receipt-fabric-color {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    border-bottom: 1px solid #d2d2d2;
+  }
+
+  .receipt-chair-leg-color {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    border-bottom: 1px solid #d2d2d2;
+  }
+
+  .receipt-price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 33px;
+  }
+
+  .receipt-price-text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .receipt-general-price {
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+  }
+
+  .receipt-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .buy-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    background: #fff;
+    color: #999999;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .buy-btn:hover {
+    background: #999999;
+    color: white;
+  }
+
+  .count-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .plus-minus-btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+    height: 30px;
+    margin-right: 10px;
+    border: 1px solid #999999;
+    background: #fff;
+  }
+
+  .count-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 100%;
+    border: 0;
+    background: #fff;
+    font-size: 20px;
+    line-height: 14px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-sizing: border-box;
+  }
+
+  .count-btn:hover {
+    background: #999999;
+    color: white;
+  }
+
+  .receipt-button-container .step-one-btn {
+    margin-right: 0;
   }
 
   @media screen and (max-width: 1024px) {
