@@ -388,11 +388,8 @@ function conditionally_remove_short_description() {
 function add_grouped_product_imports() {
     wp_enqueue_style('custom-template-style', get_template_directory_uri() . '/assets/css/grouped-product.css');
 	wp_enqueue_script(
-        'grouped-page', // Handle
-        get_template_directory_uri() . '/assets/js/grouped-product.js', // Path to JS file
-        array(), // Dependencies
-        null, // Version
-        true // Load in footer
+        'grouped-page', 
+        get_template_directory_uri() . '/assets/js/grouped-product.js',
     );
 }
 add_action('wp_enqueue_scripts', 'add_grouped_product_imports');
